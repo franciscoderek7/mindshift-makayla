@@ -1,17 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MindShift | Makayla Francisco — Psychology & Sustainability</title>
-    <meta name="description" content="MindShift — Psychology, sustainability, AI coaching, and behavior modification. Founded by Makayla Francisco at Trent University. KOKORO NO TENKAN — transform your mind, transform your world.">
-    <meta name="keywords" content="behavior modification, mental health, Japanese aesthetic, Peterborough, psychology, sustainability, AI coaching, Trent University, Makayla Francisco, KOKORO NO TENKAN">
+    <title>MindShift | Makayla Francisco — Psychology, Sustainability & AI</title>
+    <meta name="description" content="Evidence-based psychology services by Trent University graduate Makayla Francisco. AI-powered coaching, sustainability consulting, behavior modification. KOKORO NO TENKAN.">
+    <meta name="keywords" content="psychology peterborough, sustainability consulting ontario, AI mental health coaching, mindfulness courses canada, behavior modification therapy, japanese aesthetic wellness, Makayla Francisco, Trent University, KOKORO NO TENKAN">
     <meta name="author" content="Makayla Francisco">
-    <meta property="og:title" content="MindShift | Makayla Francisco — Psychology & Sustainability">
+    <meta property="og:title" content="MindShift | Makayla Francisco — Psychology, Sustainability & AI">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://franciscoderek7.github.io/mindshift-makayla/">
     <meta property="og:description" content="Behavior modification, consciousness research, and sustainable transformation. KOKORO NO TENKAN.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://franciscoderek7.github.io/mindshift-makayla/">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "MindShift",
+          "url": "https://franciscoderek7.github.io/mindshift-makayla/",
+          "founder": {
+            "@type": "Person",
+            "name": "Makayla Francisco",
+            "jobTitle": "Founder & Lead Consultant",
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Trent University"
+            }
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Peterborough",
+            "addressRegion": "Ontario",
+            "addressCountry": "CA"
+          },
+          "description": "Evidence-based psychology services, AI-powered coaching, sustainability consulting, and behavior modification.",
+          "sameAs": []
+        },
+        {
+          "@type": "Service",
+          "name": "Personal Coaching",
+          "provider": { "@type": "Organization", "name": "MindShift" },
+          "description": "One-on-one behavior modification coaching for depression management, stress reduction, addiction recovery, and personal growth."
+        },
+        {
+          "@type": "Product",
+          "name": "Transformation Journal",
+          "description": "Guided journal for daily reflection, habit tracking, and consciousness expansion.",
+          "offers": { "@type": "Offer", "price": "29", "priceCurrency": "CAD" }
+        },
+        {
+          "@type": "Product",
+          "name": "Behavior Modification Guide",
+          "description": "Comprehensive 200-page guide covering CBT techniques, habit formation, and consciousness research.",
+          "offers": { "@type": "Offer", "price": "49", "priceCurrency": "CAD" }
+        },
+        {
+          "@type": "Product",
+          "name": "Mind-Expanding Supplements",
+          "description": "Curated nootropic and adaptogen stack for cognitive enhancement and stress resilience.",
+          "offers": { "@type": "Offer", "price": "79", "priceCurrency": "CAD" }
+        },
+        {
+          "@type": "Product",
+          "name": "Full Course Access",
+          "description": "All 5 transformative courses with lifetime access, worksheets, community, and monthly Q&A.",
+          "offers": { "@type": "Offer", "price": "149", "priceCurrency": "CAD" }
+        },
+        {
+          "@type": "Product",
+          "name": "Complete Transformation Kit",
+          "description": "Everything: all courses, all products, 3 coaching sessions, and lifetime community access.",
+          "offers": { "@type": "Offer", "price": "199", "priceCurrency": "CAD" }
+        }
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -1224,12 +1291,30 @@
             border: 1px solid rgba(201, 169, 110, 0.15);
             pointer-events: none;
         }
+
+        /* ===== ACCESSIBILITY: REDUCED MOTION ===== */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .petal { display: none; }
+        }
+
+        /* ===== FOCUS INDICATORS ===== */
+        a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+            outline: 2px solid var(--gold);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
 
     <!-- Disclaimer Banner -->
-    <div class="disclaimer-banner">
+    <div class="disclaimer-banner" role="alert" aria-live="polite">
         <strong>Educational services only.</strong> MindShift is not licensed therapy. Not a substitute for professional mental health care. <a href="terms.html" style="color:#C53030;text-decoration:underline;">Read full disclaimer</a>
     </div>
 
@@ -1345,11 +1430,11 @@
         </ul>
         <a href="#contact" class="nav-cta" style="margin-right:0.5rem;background:transparent;border:1.5px solid var(--gold);color:var(--gold);">Book Now</a>
         <a href="javascript:void(0)" class="nav-cta" onclick="openPricing()">View Pricing</a>
-        <div class="mobile-toggle" id="mobileToggle" onclick="toggleNav()">
+        <button class="mobile-toggle" id="mobileToggle" onclick="toggleNav()" aria-label="Toggle navigation menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </nav>
 
     <!-- Hero Section -->
@@ -1664,7 +1749,7 @@
                     <option value="general">General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about your goals and how we can help..."></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
+                <button type="submit" class="btn-primary" aria-label="Send contact message">Send Message</button>
             </form>
         </div>
     </section>
@@ -1687,9 +1772,14 @@
         <div class="footer-gift">
             A gift from Derek Francisco. Built with <span class="heart">♥</span> for Makayla's graduation.
         </div>
+        <div class="footer-security" style="margin:1.5rem 0;padding:0.8rem 1.5rem;background:rgba(13,17,23,0.04);border:1px solid rgba(0,255,200,0.15);border-radius:8px;display:inline-flex;align-items:center;gap:0.8rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00C9A7" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span style="font-size:0.7rem;color:var(--text-medium);letter-spacing:0.08em;text-transform:uppercase;">Secured by <strong style="color:#00C9A7;">OmniaGuard</strong> SDK &bull; End-to-End Encrypted &bull; Zero Prompt Injection</span>
+        </div>
         <div class="footer-copy">
             &copy; 2026 MindShift. All rights reserved. Peterborough, Ontario, Canada.<br>
-            Educational services only. Not licensed therapy. Not a substitute for professional mental health care.
+            Educational services only. Not licensed therapy. Not a substitute for professional mental health care.<br>
+            <span style="font-size:0.65rem;color:var(--text-light);margin-top:0.3rem;display:inline-block;">A Francisco Holdings Inc. company.</span>
         </div>
     </footer>
 
@@ -1724,7 +1814,9 @@
 
         // Mobile nav toggle
         function toggleNav() {
-            document.getElementById('navLinks').classList.toggle('open');
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('open');
+            document.getElementById('mobileToggle').setAttribute('aria-expanded', nav.classList.contains('open'));
         }
 
         // Scroll reveal
