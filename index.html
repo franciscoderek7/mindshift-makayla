@@ -954,6 +954,248 @@
             }
         }
 
+        /* ===== DISCLAIMER BANNER ===== */
+        .disclaimer-banner {
+            background: linear-gradient(90deg, #FFF5F5, #FFFEF7);
+            border-bottom: 1px solid rgba(229, 62, 62, 0.2);
+            padding: 0.6rem 2rem;
+            text-align: center;
+            font-size: 0.75rem;
+            color: #C53030;
+            letter-spacing: 0.03em;
+            position: relative;
+            z-index: 998;
+        }
+
+        .disclaimer-banner strong {
+            font-weight: 500;
+        }
+
+        /* ===== PRICING MODAL ===== */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(45, 27, 51, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 10000;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal {
+            background: white;
+            max-width: 900px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 3rem;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 32px;
+            height: 32px;
+            background: none;
+            border: 1.5px solid var(--gold);
+            color: var(--gold);
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .modal-close:hover {
+            background: var(--gold);
+            color: white;
+        }
+
+        .modal h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--deep-plum);
+            margin-bottom: 0.5rem;
+        }
+
+        .modal .modal-subtitle {
+            color: var(--text-medium);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-card {
+            padding: 2rem 1.5rem;
+            border: 1.5px solid rgba(201, 169, 110, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--gold);
+            box-shadow: 0 8px 30px rgba(201, 169, 110, 0.15);
+        }
+
+        .pricing-card.featured::before {
+            content: 'POPULAR';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gold);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            padding: 0.2rem 0.8rem;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        .pricing-card h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--deep-plum);
+            margin-bottom: 0.3rem;
+        }
+
+        .pricing-card .price-amount {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--gold-dark);
+            margin: 0.8rem 0;
+        }
+
+        .pricing-card .price-period {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-card li {
+            font-size: 0.82rem;
+            color: var(--text-medium);
+            padding: 0.4rem 0;
+            border-bottom: 1px solid rgba(201, 169, 110, 0.08);
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .pricing-card li::before {
+            content: '\2713';
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .pricing-card .btn-pricing {
+            display: block;
+            padding: 0.7rem 1.5rem;
+            background: var(--gold);
+            color: white;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .pricing-card .btn-pricing:hover {
+            background: var(--gold-dark);
+        }
+
+        .modal-disclaimer {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            text-align: center;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(201, 169, 110, 0.1);
+        }
+
+        /* ===== EMAIL CAPTURE MODAL ===== */
+        .email-modal .email-form {
+            max-width: 400px;
+            margin: 2rem auto 0;
+            text-align: center;
+        }
+
+        .email-modal .email-form input {
+            width: 100%;
+            padding: 1rem 1.2rem;
+            border: 1.5px solid rgba(201, 169, 110, 0.3);
+            background: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            outline: none;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .email-modal .email-form input:focus {
+            border-color: var(--gold);
+        }
+
+        .email-modal .email-form button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--gold);
+            color: white;
+            border: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .email-modal .email-form button:hover {
+            background: var(--gold-dark);
+        }
+
+        .email-modal .email-form .form-note {
+            font-size: 0.72rem;
+            color: var(--text-light);
+            margin-top: 0.8rem;
+        }
+
         /* ===== SCROLL ANIMATIONS ===== */
         .reveal {
             opacity: 0;
@@ -977,8 +1219,103 @@
 </head>
 <body>
 
+    <!-- Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <strong>Educational services only.</strong> MindShift is not licensed therapy. Not a substitute for professional mental health care. <a href="terms.html" style="color:#C53030;text-decoration:underline;">Read full disclaimer</a>
+    </div>
+
     <!-- Cherry Blossom Particles -->
     <div class="sakura-container" id="sakura"></div>
+
+    <!-- Pricing Modal -->
+    <div class="modal-overlay" id="pricingModal">
+        <div class="modal">
+            <button class="modal-close" onclick="closePricing()">&times;</button>
+            <h2>Investment in Your Transformation</h2>
+            <p class="modal-subtitle">Choose the path that resonates with your journey. All programs include lifetime access to course materials.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h4>Self-Study Course</h4>
+                    <div class="price-amount">$29</div>
+                    <div class="price-period">one-time</div>
+                    <ul>
+                        <li>Single course access</li>
+                        <li>Downloadable worksheets</li>
+                        <li>Community forum access</li>
+                        <li>Certificate of completion</li>
+                    </ul>
+                    <a href="#" class="btn-pricing" onclick="handlePayment('self-study', 29)">Enroll Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h4>Personal Coaching</h4>
+                    <div class="price-amount">$49</div>
+                    <div class="price-period">per session</div>
+                    <ul>
+                        <li>1-on-1 video session (60 min)</li>
+                        <li>Personalized action plan</li>
+                        <li>Email support between sessions</li>
+                        <li>Progress tracking tools</li>
+                    </ul>
+                    <a href="#" class="btn-pricing" onclick="handlePayment('coaching', 49)">Book Session</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h4>Full Course Bundle</h4>
+                    <div class="price-amount">$79</div>
+                    <div class="price-period">one-time</div>
+                    <ul>
+                        <li>All 5 courses included</li>
+                        <li>Bonus meditation library</li>
+                        <li>Private community access</li>
+                        <li>Monthly group Q&A</li>
+                        <li>Lifetime updates</li>
+                    </ul>
+                    <a href="#" class="btn-pricing" onclick="handlePayment('bundle', 79)">Get Bundle</a>
+                </div>
+                <div class="pricing-card">
+                    <h4>Transformation Package</h4>
+                    <div class="price-amount">$149</div>
+                    <div class="price-period">per month</div>
+                    <ul>
+                        <li>4 coaching sessions/month</li>
+                        <li>All courses included</li>
+                        <li>Priority email support</li>
+                        <li>Custom behavior plan</li>
+                        <li>Weekly accountability check-ins</li>
+                    </ul>
+                    <a href="#" class="btn-pricing" onclick="handlePayment('transformation', 149)">Start Program</a>
+                </div>
+                <div class="pricing-card">
+                    <h4>Corporate / Group</h4>
+                    <div class="price-amount">$199</div>
+                    <div class="price-period">per participant</div>
+                    <ul>
+                        <li>Team workshops (up to 20)</li>
+                        <li>Custom curriculum design</li>
+                        <li>Sustainability audit included</li>
+                        <li>Post-training report</li>
+                        <li>Follow-up session</li>
+                    </ul>
+                    <a href="#" class="btn-pricing" onclick="handlePayment('corporate', 199)">Request Quote</a>
+                </div>
+            </div>
+            <p class="modal-disclaimer">All prices in CAD. Educational services only — not licensed therapy. Secure payment processing via Stripe. <a href="terms.html" style="color:var(--gold);">Terms of Service</a> | <a href="privacy.html" style="color:var(--gold);">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <!-- Email Capture Modal -->
+    <div class="modal-overlay email-modal" id="emailModal">
+        <div class="modal" style="max-width:500px;text-align:center;">
+            <button class="modal-close" onclick="closeEmail()">&times;</button>
+            <h2>Begin Your Shift</h2>
+            <p class="modal-subtitle">Enter your email to receive a free behavior modification starter guide and course updates.</p>
+            <div class="email-form">
+                <input type="text" id="emailName" placeholder="Your Name" required>
+                <input type="email" id="emailAddress" placeholder="your@email.com" required>
+                <button onclick="handleEmailCapture()">Get Free Guide</button>
+                <p class="form-note">No spam. Unsubscribe anytime. PIPEDA compliant. <a href="privacy.html" style="color:var(--gold);">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
 
     <!-- Navigation -->
     <nav id="navbar">
@@ -996,7 +1333,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="nav-cta">Begin Your Shift</a>
+        <a href="javascript:void(0)" class="nav-cta" onclick="openPricing()">View Pricing</a>
         <div class="mobile-toggle" id="mobileToggle" onclick="toggleNav()">
             <span></span>
             <span></span>
@@ -1013,7 +1350,7 @@
             <p class="hero-founder">Founded by <strong>Makayla Francisco</strong> &bull; Psychology &bull; Trent University</p>
             <div class="hero-ctas">
                 <a href="#services" class="btn-primary">Explore Services</a>
-                <a href="#courses" class="btn-secondary">View Courses</a>
+                <a href="javascript:void(0)" class="btn-secondary" onclick="openPricing()">View Pricing</a>
             </div>
         </div>
     </section>
@@ -1279,12 +1616,16 @@
             <a href="#products">Products</a>
             <a href="#about">About Makayla</a>
             <a href="#contact">Contact</a>
+            <a href="javascript:void(0)" onclick="openPricing()">Pricing</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
         </div>
         <div class="footer-gift">
             A gift from Derek Francisco. Built with <span class="heart">♥</span> for Makayla's graduation.
         </div>
         <div class="footer-copy">
-            &copy; 2025 MindShift. All rights reserved. Peterborough, Ontario, Canada.
+            &copy; 2025 MindShift. All rights reserved. Peterborough, Ontario, Canada.<br>
+            Educational services only. Not licensed therapy. Not a substitute for professional mental health care.
         </div>
     </footer>
 
@@ -1340,9 +1681,68 @@
         // Form handler
         function handleSubmit(e) {
             e.preventDefault();
-            alert('Thank you for reaching out! Makayla will get back to you soon. 🌸');
+            alert('Thank you for reaching out! Makayla will get back to you soon.');
             e.target.reset();
         }
+
+        // Pricing Modal
+        function openPricing() {
+            document.getElementById('pricingModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePricing() {
+            document.getElementById('pricingModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Email Modal
+        function openEmail() {
+            document.getElementById('emailModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeEmail() {
+            document.getElementById('emailModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Payment handler (placeholder — Stripe integration pending)
+        function handlePayment(plan, amount) {
+            openEmail();
+            closePricing();
+        }
+
+        // Email capture handler
+        function handleEmailCapture() {
+            const name = document.getElementById('emailName').value;
+            const email = document.getElementById('emailAddress').value;
+            if (!name || !email) {
+                alert('Please enter your name and email.');
+                return;
+            }
+            // Store lead (placeholder — backend integration pending)
+            alert('Welcome, ' + name + '! Check your email for the free starter guide. Payment processing will be available soon.');
+            closeEmail();
+        }
+
+        // Close modals on overlay click
+        document.querySelectorAll('.modal-overlay').forEach(overlay => {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+
+        // Close modals on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closePricing();
+                closeEmail();
+            }
+        });
 
         // Close mobile nav on link click
         document.querySelectorAll('.nav-links a').forEach(link => {
