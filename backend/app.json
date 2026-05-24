@@ -1,0 +1,85 @@
+{
+  "name": "mindshift-backend",
+  "description": "MindShift — Behavior Modification & Consciousness Research Platform. Backend API with 8 AI agents, PostgreSQL, Redis, Stripe, Calendly.",
+  "repository": "https://github.com/franciscoderek7/mindshift-makayla",
+  "keywords": ["psychology", "behavior-modification", "coaching", "ai-agents", "education"],
+  "stack": "heroku-22",
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ],
+  "formation": {
+    "web": { "quantity": 1, "size": "basic" },
+    "worker": { "quantity": 1, "size": "basic" }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql:essential-0",
+      "as": "DATABASE"
+    },
+    {
+      "plan": "heroku-redis:mini",
+      "as": "REDIS"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Application environment",
+      "value": "production"
+    },
+    "JWT_SECRET": {
+      "description": "Secret key for JWT token signing",
+      "generator": "secret"
+    },
+    "STRIPE_SECRET_KEY": {
+      "description": "Stripe secret API key (sk_live_...)",
+      "required": true
+    },
+    "STRIPE_WEBHOOK_SECRET": {
+      "description": "Stripe webhook endpoint signing secret (whsec_...)",
+      "required": true
+    },
+    "STRIPE_PUBLISHABLE_KEY": {
+      "description": "Stripe publishable key for frontend (pk_live_...)",
+      "required": true
+    },
+    "CALENDLY_API_KEY": {
+      "description": "Calendly personal access token",
+      "required": true
+    },
+    "CALENDLY_WEBHOOK_SECRET": {
+      "description": "Calendly webhook signing key",
+      "required": true
+    },
+    "SENDGRID_API_KEY": {
+      "description": "SendGrid API key for transactional emails",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key for AI agent reasoning",
+      "required": true
+    },
+    "REDIS_URL": {
+      "description": "Redis connection URL (auto-populated by addon)",
+      "required": false
+    },
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection URL (auto-populated by addon)",
+      "required": false
+    },
+    "SESSION_SECRET": {
+      "description": "Express session encryption secret",
+      "generator": "secret"
+    },
+    "CORS_ORIGIN": {
+      "description": "Allowed CORS origin (frontend URL)",
+      "value": "https://franciscoderek7.github.io"
+    },
+    "ADMIN_EMAIL": {
+      "description": "Admin notification email",
+      "value": "makayla@mindshift.ca"
+    }
+  },
+  "scripts": {
+    "postdeploy": "node db/migrate.mjs && node db/seed.mjs"
+  }
+}

@@ -1,0 +1,3 @@
+web: node server.mjs
+worker: node workers/agent-processor.mjs
+release: node db/migrate.mjs
