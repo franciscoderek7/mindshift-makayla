@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://franciscoderek7.github.io/mindshift-makayla/sitemap.xml
