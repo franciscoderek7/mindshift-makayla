@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <radialGradient id="blossomGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A84C"/>
+      <stop offset="40%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#B8924A"/>
+    </radialGradient>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1B1A2E"/>
+      <stop offset="100%" stop-color="#14132A"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer octagonal frame -->
+  <polygon points="150,18 218,40 268,100 278,170 248,240 185,278 115,278 52,240 22,170 32,100 82,40"
+    fill="none" stroke="#C9A84C" stroke-width="3.5"/>
+
+  <!-- Background fill -->
+  <polygon points="150,22 215,43 263,101 273,169 244,237 183,274 117,274 56,237 27,169 37,101 85,43"
+    fill="url(#bgGrad)"/>
+
+  <!-- Orbital ring -->
+  <circle cx="150" cy="150" r="108" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+  <circle cx="150" cy="150" r="112" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Orbital petals — 10 petals alternating pink/teal around the ring -->
+  <!-- Petal positions on r=110 circle: every 36 degrees -->
+  <!-- Pink petals at 0, 72, 144, 216, 288 -->
+  <!-- Teal petals at 36, 108, 180, 252, 324 -->
+  <g id="orbital-petals">
+    <!-- Pink petal at 0deg (top) -->
+    <g transform="translate(150,38) rotate(0,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#F4A5B8"/>
+    </g>
+    <!-- Teal petal at 36deg -->
+    <g transform="translate(214.6,68.4) rotate(36,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#7ECDC0"/>
+    </g>
+    <!-- Pink petal at 72deg -->
+    <g transform="translate(254.6,131.2) rotate(72,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#F4A5B8"/>
+    </g>
+    <!-- Teal petal at 108deg -->
+    <g transform="translate(254.6,168.8) rotate(108,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#7ECDC0"/>
+    </g>
+    <!-- Pink petal at 144deg -->
+    <g transform="translate(214.6,231.6) rotate(144,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#F4A5B8"/>
+    </g>
+    <!-- Teal petal at 180deg (bottom) -->
+    <g transform="translate(150,262) rotate(180,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#7ECDC0"/>
+    </g>
+    <!-- Pink petal at 216deg -->
+    <g transform="translate(85.4,231.6) rotate(216,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#F4A5B8"/>
+    </g>
+    <!-- Teal petal at 252deg -->
+    <g transform="translate(45.4,168.8) rotate(252,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#7ECDC0"/>
+    </g>
+    <!-- Pink petal at 288deg -->
+    <g transform="translate(45.4,131.2) rotate(288,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#F4A5B8"/>
+    </g>
+    <!-- Teal petal at 324deg -->
+    <g transform="translate(85.4,68.4) rotate(324,0,0)">
+      <ellipse cx="0" cy="0" rx="6" ry="10" fill="#7ECDC0"/>
+    </g>
+  </g>
+
+  <!-- Inner hexagonal shield -->
+  <polygon points="150,72 198,97 198,148 198,203 150,228 102,203 102,148 102,97"
+    fill="#111022" stroke="#C9A84C" stroke-width="2"/>
+
+  <!-- 5-petal cherry blossom center -->
+  <g transform="translate(150,148)">
+    <!-- Petal 1 top -->
+    <ellipse transform="rotate(0)" cx="0" cy="-26" rx="14" ry="22" fill="#F4A5B8" opacity="0.95"/>
+    <!-- Petal 2 -->
+    <ellipse transform="rotate(72)" cx="0" cy="-26" rx="14" ry="22" fill="#FBDCE5" opacity="0.95"/>
+    <!-- Petal 3 -->
+    <ellipse transform="rotate(144)" cx="0" cy="-26" rx="14" ry="22" fill="#F4A5B8" opacity="0.95"/>
+    <!-- Petal 4 -->
+    <ellipse transform="rotate(216)" cx="0" cy="-26" rx="14" ry="22" fill="#FBDCE5" opacity="0.95"/>
+    <!-- Petal 5 -->
+    <ellipse transform="rotate(288)" cx="0" cy="-26" rx="14" ry="22" fill="#F4A5B8" opacity="0.95"/>
+    <!-- Gold center -->
+    <circle cx="0" cy="0" r="12" fill="url(#blossomGrad)"/>
+    <circle cx="0" cy="0" r="6" fill="#C9A84C"/>
+    <!-- Stamen dots -->
+    <circle cx="0" cy="-8" r="2" fill="#1B1A2E"/>
+    <circle cx="7.6" cy="-2.5" r="2" fill="#1B1A2E"/>
+    <circle cx="4.7" cy="6.5" r="2" fill="#1B1A2E"/>
+    <circle cx="-4.7" cy="6.5" r="2" fill="#1B1A2E"/>
+    <circle cx="-7.6" cy="-2.5" r="2" fill="#1B1A2E"/>
+  </g>
+
+  <!-- M monogram -->
+  <text x="150" y="219" font-family="Georgia, serif" font-size="22" font-weight="700"
+    fill="#C9A84C" text-anchor="middle" letter-spacing="2">M</text>
+
+  <!-- Bottom text arc — MINDSHIFT by Makayla Francisco -->
+  <path id="bottomArc" d="M 62,240 A 110,110 0 0,0 238,240" fill="none"/>
+  <text font-family="Georgia, serif" font-size="10" fill="#C9A84C" letter-spacing="1.5">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">MINDSHIFT · by Makayla Francisco</textPath>
+  </text>
+
+  <!-- Top text arc — KOKORO NO TENKAN -->
+  <path id="topArc" d="M 55,150 A 100,100 0 0,1 245,150" fill="none"/>
+  <text font-family="Georgia, serif" font-size="9" fill="#7ECDC0" letter-spacing="2" opacity="0.85">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">心の転換  ·  KOKORO NO TENKAN</textPath>
+  </text>
+</svg>

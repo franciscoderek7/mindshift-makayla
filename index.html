@@ -3,997 +3,1572 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MindShift by Makayla Francisco — Neuroplasticity Coaching & Personal Growth</title>
-<meta name="description" content="Transform your mind, shift your life. Neuroscience-backed personal growth coaching by Makayla Francisco. Falling in love with who you're becoming.">
-<meta property="og:title" content="MindShift by Makayla Francisco">
-<meta property="og:description" content="Neuroplasticity-based coaching for lasting personal transformation. Cherry blossom season lasts forever here.">
+<title>MindShift — Makayla Francisco · 心の転換</title>
+<meta name="description" content="心の転換 · Kokoro No Tenkan — Psychology · Sustainability · Sovereignty. Fourth Year Psychology Graduate, Mindset Coach, Future Author. Peterborough, Ontario.">
+<meta property="og:title" content="MindShift — Makayla Francisco">
+<meta property="og:description" content="The world shifts when one mind transforms. Psychology · Sustainability · Sovereignty.">
+<meta name="theme-color" content="#1A0035">
 <style>
-  :root {
-    --rose:       #C8526A;
-    --rose-light: #E8899A;
-    --rose-pale:  #F5C6D0;
-    --rose-blush: #FDE8ED;
-    --gold:       #C9A565;
-    --gold-light: #E8C98A;
-    --bg:         #FDF5F7;
-    --bg2:        #FFF0F3;
-    --white:      #FFFFFF;
-    --text:       #2D1F28;
-    --muted:      #8A6878;
-    --border:     rgba(200,82,106,0.15);
-    --shadow:     0 8px 40px rgba(200,82,106,0.1);
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
+/* ═══════════════════════════════════════════════════════
+   MINDSHIFT — IMPERIAL PURPLE / JAPANESE LUXURY EDITION
+   Fortune Trillion-Dollar · Makayla Francisco · Age 21
+═══════════════════════════════════════════════════════ */
+:root {
+  --void:      #06000F;
+  --abyss:     #0E0520;
+  --imperial:  #160830;
+  --deep:      #1E0F3C;
+  --rich:      #2D1B55;
+  --violet:    #4A2875;
+  --amethyst:  #7B4FA0;
+  --lavender:  #B08FD0;
+  --lilac:     #D4BFEE;
+  --gold:      #C9A84C;
+  --gold2:     #E8C97A;
+  --gold3:     #F5E0A0;
+  --sakura:    #E896C8;
+  --blossom:   #F4C8E0;
+  --petal:     #FBDCE5;
+  --teal:      #5BBCAD;
+  --emerald:   #3FAF9E;
+  --cream:     #F8F4FF;
+  --white:     #FFFFFF;
+  --muted:     #7A6895;
+  --border:    rgba(201,168,76,0.2);
+  --border-v:  rgba(180,130,230,0.2);
+  --glow-gold: 0 0 40px rgba(201,168,76,0.18);
+  --glow-v:    0 0 40px rgba(123,79,160,0.3);
+}
 
-  /* ── CHERRY BLOSSOM CANVAS ── */
-  #blossom-canvas {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 999;
-  }
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background: var(--void);
+  color: var(--cream);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
 
-  /* ── NAV ── */
-  nav {
-    position: sticky; top: 0; z-index: 500;
-    background: rgba(253,245,247,0.94);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--border);
-    padding: 0 clamp(16px,5vw,60px);
-    height: 66px;
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  .nav-logo {
-    display: flex; align-items: center; gap: 10px;
-    text-decoration: none;
-  }
-  .nav-wordmark {
-    font-size: 19px; font-weight: 900; letter-spacing: -0.3px; color: var(--text);
-    line-height: 1;
-  }
-  .nav-wordmark em { color: var(--rose); font-style: normal; }
-  .nav-sub { font-size: 10px; color: var(--muted); letter-spacing: 1.5px; text-transform: uppercase; margin-top: 1px; }
-  .nav-links { display: flex; align-items: center; gap: 24px; }
-  .nav-links a { font-size: 14px; color: var(--muted); text-decoration: none; transition: color .2s; font-weight: 500; }
-  .nav-links a:hover { color: var(--rose); }
-  .nav-cta {
-    background: linear-gradient(135deg, var(--rose), #a8384f);
-    color: #fff; font-size: 13px; font-weight: 700;
-    padding: 9px 22px; border-radius: 100px; border: none;
-    cursor: pointer; text-decoration: none; display: inline-block;
-    box-shadow: 0 4px 16px rgba(200,82,106,0.3);
-    transition: transform .2s, box-shadow .2s;
-  }
-  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(200,82,106,0.4); }
-  @media(max-width:640px) { .nav-links { display: none; } }
+/* ── CANVAS ── */
+#blossom-canvas {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none; z-index: 999;
+}
 
-  /* ── HERO ── */
-  .hero {
-    min-height: 96vh;
-    display: flex; align-items: center; justify-content: center;
-    text-align: center;
-    padding: 100px clamp(16px,6vw,80px) 80px;
-    position: relative; overflow: hidden;
-  }
-  .hero-bg {
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(ellipse 100% 70% at 50% 0%, rgba(245,198,208,0.5) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 50% at 20% 80%, rgba(232,137,154,0.2) 0%, transparent 55%),
-      radial-gradient(ellipse 60% 50% at 80% 80%, rgba(201,165,101,0.1) 0%, transparent 55%);
-  }
-  .hero-content { position: relative; max-width: 800px; }
-  .hero-eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--white); border: 1px solid var(--rose-pale);
-    color: var(--rose); font-size: 11px; font-weight: 700; letter-spacing: 2.5px;
-    text-transform: uppercase; padding: 7px 18px; border-radius: 100px;
-    margin-bottom: 28px;
-    box-shadow: 0 2px 12px rgba(200,82,106,0.1);
-  }
-  .hero-title {
-    font-size: clamp(46px, 8vw, 90px);
-    font-weight: 900; line-height: 1.0; letter-spacing: -3px;
-    margin-bottom: 24px; color: var(--text);
-  }
-  .hero-title .rose-grad {
-    background: linear-gradient(135deg, var(--rose) 0%, #9B2335 50%, var(--gold) 100%);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .hero-sub {
-    font-size: clamp(16px, 2.2vw, 20px);
-    color: var(--muted); max-width: 560px; margin: 0 auto 36px;
-    line-height: 1.75; font-weight: 400;
-  }
-  .hero-sub strong { color: var(--text); }
-  .hero-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 52px; }
-  .btn-primary {
-    background: linear-gradient(135deg, var(--rose), #a8384f);
-    color: #fff; font-weight: 800; font-size: 15px;
-    padding: 16px 34px; border-radius: 100px; border: none; cursor: pointer;
-    text-decoration: none; display: inline-block;
-    box-shadow: 0 8px 28px rgba(200,82,106,0.35);
-    transition: transform .2s, box-shadow .2s;
-  }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(200,82,106,0.45); }
-  .btn-secondary {
-    background: var(--white); color: var(--rose); font-weight: 700; font-size: 15px;
-    padding: 15px 30px; border-radius: 100px;
-    border: 1.5px solid var(--rose-pale);
-    cursor: pointer; text-decoration: none; display: inline-block;
-    transition: border-color .2s, box-shadow .2s;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-  }
-  .btn-secondary:hover { border-color: var(--rose); box-shadow: 0 4px 20px rgba(200,82,106,0.15); }
-  .hero-proof {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
-    margin-bottom: 44px;
-  }
-  .proof-chip {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 100px; padding: 7px 16px;
-    font-size: 12px; color: var(--muted); font-weight: 600;
-    display: flex; align-items: center; gap: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  }
-  .proof-chip .dot { color: var(--rose); font-size: 16px; line-height: 1; }
-  .hero-stats {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 20px; overflow: hidden;
-    box-shadow: var(--shadow);
-  }
-  @media(max-width:580px) { .hero-stats { grid-template-columns: 1fr 1fr; } }
-  .hs-item { padding: 20px 12px; text-align: center; border-right: 1px solid var(--border); }
-  .hs-item:last-child { border-right: none; }
-  .hs-num {
-    font-size: 28px; font-weight: 900; line-height: 1;
-    background: linear-gradient(135deg, var(--rose), var(--gold));
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .hs-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+/* ── SCROLL REVEAL ── */
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s ease, transform 0.8s ease; }
+.reveal.visible { opacity: 1; transform: none; }
 
-  /* ── SECTIONS ── */
-  .section { padding: clamp(64px,8vw,100px) clamp(16px,6vw,80px); }
-  .section-inner { max-width: 1120px; margin: 0 auto; }
-  .section-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--rose); margin-bottom: 10px; }
-  .section-title { font-size: clamp(28px,4vw,48px); font-weight: 900; letter-spacing: -1px; line-height: 1.12; margin-bottom: 14px; color: var(--text); }
-  .section-sub { font-size: 16px; color: var(--muted); max-width: 520px; line-height: 1.75; }
-  .centered { text-align: center; }
-  .centered .section-sub { margin: 0 auto; }
+/* ── NAV ── */
+nav {
+  position: sticky; top: 0; z-index: 500;
+  background: rgba(14,5,32,0.96);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-v);
+  padding: 0 5%;
+}
+.nav-inner {
+  max-width: 1400px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo {
+  width: 36px; height: 36px;
+}
+.nav-name {
+  font-family: Georgia, serif;
+  font-size: 17px; font-weight: 700;
+  color: var(--gold); letter-spacing: 0.12em;
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  color: var(--lavender); font-size: 13px; letter-spacing: 0.08em;
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-cta {
+  background: linear-gradient(135deg, var(--violet), var(--amethyst));
+  color: var(--cream) !important;
+  padding: 8px 20px; border-radius: 2px;
+  font-size: 12px !important; letter-spacing: 0.14em !important;
+  font-weight: 600; border: 1px solid rgba(201,168,76,0.3);
+}
+.nav-cta:hover { background: linear-gradient(135deg, var(--amethyst), var(--violet)) !important; color: var(--gold) !important; }
 
-  /* ── ABOUT ── */
-  .about-section { background: var(--white); }
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-  @media(max-width:768px) { .about-grid { grid-template-columns: 1fr; gap: 40px; } }
-  .about-visual {
-    background: linear-gradient(160deg, var(--rose-blush), var(--bg2));
-    border: 1px solid var(--border);
-    border-radius: 28px; padding: 48px 36px; text-align: center;
-    position: relative; overflow: hidden;
-  }
-  .about-visual::before {
-    content: ''; position: absolute; inset: 0;
-    background: radial-gradient(circle at 50% 20%, rgba(200,82,106,0.08) 0%, transparent 60%);
-  }
-  .about-monogram {
-    width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 20px;
-    background: linear-gradient(135deg, var(--rose-light), var(--rose));
-    display: flex; align-items: center; justify-content: center;
-    font-size: 42px; font-weight: 900; color: #fff;
-    position: relative; z-index: 1;
-    box-shadow: 0 8px 32px rgba(200,82,106,0.3);
-  }
-  .about-name { font-size: 22px; font-weight: 900; color: var(--text); position: relative; z-index: 1; margin-bottom: 4px; }
-  .about-title { font-size: 12px; color: var(--rose); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; position: relative; z-index: 1; margin-bottom: 20px; }
-  .about-badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; position: relative; z-index: 1; }
-  .about-badge { font-size: 11px; font-weight: 700; padding: 5px 14px; border-radius: 100px; background: var(--white); border: 1px solid var(--rose-pale); color: var(--rose); }
-  .about-text p { font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 18px; }
-  .about-text p strong { color: var(--text); }
-  .pillar-list { list-style: none; margin: 24px 0; }
-  .pillar-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: var(--muted); padding: 10px 0; border-bottom: 1px solid rgba(200,82,106,0.08); }
-  .pillar-list li:last-child { border-bottom: none; }
-  .pillar-icon { color: var(--rose); font-size: 18px; flex-shrink: 0; }
+/* ── HERO ── */
+.hero {
+  position: relative; min-height: 100vh;
+  display: flex; align-items: center;
+  background: radial-gradient(ellipse 80% 60% at 30% 50%, #2D1B55 0%, #160830 50%, #06000F 100%);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237B4FA0' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none; opacity: 0.5;
+}
 
-  /* ── PROGRAMS / PRICING ── */
-  .programs-section { background: var(--bg); }
-  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px; align-items: start; }
-  .price-card {
-    background: var(--white); border: 1.5px solid var(--border);
-    border-radius: 24px; padding: 36px 30px;
-    box-shadow: 0 4px 24px rgba(200,82,106,0.06);
-    transition: transform .3s, box-shadow .3s;
-    display: flex; flex-direction: column;
-    position: relative; overflow: hidden;
-  }
-  .price-card:hover { transform: translateY(-6px); box-shadow: 0 16px 48px rgba(200,82,106,0.14); }
-  .price-card.featured {
-    border-color: var(--rose);
-    background: linear-gradient(160deg, rgba(253,232,237,0.6), var(--white));
-    box-shadow: 0 0 60px rgba(200,82,106,0.12);
-  }
-  .price-card.premium { border-color: var(--gold); }
-  .card-badge {
-    position: absolute; top: 20px; right: 20px;
-    font-size: 9px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase;
-    color: #fff; background: var(--rose);
-    padding: 4px 10px; border-radius: 100px;
-  }
-  .card-badge.gold { background: linear-gradient(135deg, var(--gold), #a87830); }
-  .card-tier { font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--rose); margin-bottom: 6px; }
-  .price-card.premium .card-tier { color: var(--gold); }
-  .card-name { font-size: 24px; font-weight: 900; margin-bottom: 6px; color: var(--text); }
-  .card-for { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
-  .card-price { display: flex; align-items: baseline; gap: 2px; margin-bottom: 4px; }
-  .card-amount { font-size: 52px; font-weight: 900; line-height: 1; color: var(--rose); }
-  .price-card.premium .card-amount { color: var(--gold); }
-  .card-currency { font-size: 20px; font-weight: 700; color: var(--rose); align-self: flex-start; margin-top: 8px; }
-  .card-cadence { font-size: 13px; color: var(--muted); }
-  .card-divider { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
-  .card-features { list-style: none; margin-bottom: 28px; flex: 1; }
-  .card-features li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--muted); padding: 7px 0; border-bottom: 1px solid rgba(200,82,106,0.05); }
-  .card-features li:last-child { border-bottom: none; }
-  .card-features li .chk { color: var(--rose); font-size: 12px; flex-shrink: 0; margin-top: 2px; }
-  .price-card.premium .card-features li .chk { color: var(--gold); }
-  .card-btn {
-    width: 100%; padding: 15px; border-radius: 100px; border: none;
-    font-size: 15px; font-weight: 800; cursor: pointer;
-    transition: transform .2s, box-shadow .2s;
-    text-decoration: none; display: block; text-align: center; margin-top: auto;
-  }
-  .card-btn:hover { transform: translateY(-2px); }
-  .card-btn-primary { background: linear-gradient(135deg, var(--rose), #a8384f); color: #fff; box-shadow: 0 6px 24px rgba(200,82,106,0.3); }
-  .card-btn-primary:hover { box-shadow: 0 10px 32px rgba(200,82,106,0.45); }
-  .card-btn-gold { background: linear-gradient(135deg, var(--gold-light), var(--gold)); color: #fff; box-shadow: 0 6px 24px rgba(201,165,101,0.3); }
-  .card-btn-gold:hover { box-shadow: 0 10px 32px rgba(201,165,101,0.45); }
-  .card-btn-outline { background: transparent; color: var(--rose); border: 1.5px solid var(--rose-pale); }
-  .card-btn-outline:hover { background: var(--rose-blush); }
+.hero-inner {
+  max-width: 1400px; margin: 0 auto; padding: 100px 5% 80px;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: center; width: 100%;
+}
+.hero-left { position: relative; z-index: 2; }
+.hero-kana {
+  font-family: Georgia, serif;
+  font-size: 15px; letter-spacing: 0.3em;
+  color: var(--teal); text-transform: uppercase;
+  margin-bottom: 20px; display: block;
+}
+.hero-kanji {
+  font-size: clamp(48px, 6vw, 88px);
+  font-family: Georgia, serif;
+  line-height: 1.05; font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 16px;
+}
+.hero-kanji span {
+  display: block;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 40%, var(--sakura) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-kanji .kanji-chars {
+  font-size: 0.55em; letter-spacing: 0.1em;
+  color: var(--amethyst); -webkit-text-fill-color: var(--amethyst);
+  background: none; display: block; margin-top: 8px;
+}
+.hero-sub {
+  font-size: 17px; color: var(--lavender);
+  margin-bottom: 12px; font-style: italic; letter-spacing: 0.04em;
+}
+.hero-tagline {
+  font-size: 14px; color: var(--muted);
+  letter-spacing: 0.12em; text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.hero-tagline span { color: var(--teal); }
+.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 48px; }
+.btn-primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold2) 100%);
+  color: var(--void); padding: 14px 32px;
+  font-size: 13px; font-weight: 700; letter-spacing: 0.14em;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: all 0.3s; display: inline-block;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--glow-gold); }
+.btn-outline {
+  border: 1px solid var(--border); color: var(--lavender);
+  padding: 14px 32px; font-size: 13px; letter-spacing: 0.12em;
+  text-decoration: none; transition: all 0.3s; display: inline-block;
+  background: rgba(180,130,230,0.06);
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+.hero-credentials {
+  display: flex; gap: 24px; flex-wrap: wrap;
+}
+.cred-badge {
+  background: rgba(74,40,117,0.4); border: 1px solid var(--border-v);
+  padding: 8px 16px; font-size: 11px; letter-spacing: 0.1em;
+  color: var(--lavender); text-transform: uppercase;
+}
 
-  /* ── SCIENCE ── */
-  .science-section { background: var(--white); }
-  .sci-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 48px; }
-  .sci-card {
-    background: var(--bg2); border: 1px solid var(--border);
-    border-radius: 20px; padding: 28px 22px; text-align: center;
-    transition: border-color .3s, transform .3s;
-  }
-  .sci-card:hover { border-color: var(--rose-light); transform: translateY(-3px); }
-  .sci-icon { font-size: 34px; margin-bottom: 12px; }
-  .sci-title { font-size: 15px; font-weight: 800; color: var(--rose); margin-bottom: 8px; }
-  .sci-text { font-size: 13px; color: var(--muted); line-height: 1.65; }
+/* ── BONSAI HERO ART ── */
+.hero-right {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  z-index: 2;
+}
+.bonsai-frame {
+  position: relative; width: 100%; max-width: 480px;
+  animation: bonsai-float 6s ease-in-out infinite;
+}
+@keyframes bonsai-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-16px); }
+}
+.bonsai-glow {
+  position: absolute; top: 20%; left: 10%; right: 10%; bottom: 0;
+  background: radial-gradient(ellipse at 50% 80%, rgba(123,79,160,0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
 
-  /* ── TESTIMONIALS ── */
-  .testi-section { background: var(--bg); }
-  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 48px; }
-  .testi-card {
-    background: var(--white); border: 1px solid var(--border);
-    border-radius: 20px; padding: 28px 24px;
-    box-shadow: 0 2px 16px rgba(200,82,106,0.05);
-  }
-  .testi-stars { color: var(--rose); font-size: 14px; margin-bottom: 12px; letter-spacing: 2px; }
-  .testi-text { font-size: 14px; line-height: 1.75; font-style: italic; margin-bottom: 20px; color: var(--text); }
-  .testi-author { display: flex; align-items: center; gap: 12px; }
-  .testi-avatar {
-    width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;
-    background: linear-gradient(135deg, var(--rose-light), var(--rose));
-    display: flex; align-items: center; justify-content: center;
-    font-size: 16px; font-weight: 800; color: #fff;
-  }
-  .testi-name { font-size: 13px; font-weight: 700; color: var(--text); }
-  .testi-role { font-size: 11px; color: var(--rose); }
+/* ── DIVIDER ── */
+.divider {
+  max-width: 1400px; margin: 0 auto;
+  display: flex; align-items: center; gap: 24px; padding: 0 5%;
+}
+.divider-line { flex: 1; height: 1px; background: linear-gradient(to right, transparent, var(--border), transparent); }
+.divider-symbol { color: var(--gold); font-size: 18px; opacity: 0.7; }
 
-  /* ── CTA BAND ── */
-  .cta-section {
-    background: linear-gradient(160deg, #FDE8ED, #FDF5F7);
-    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-  }
-  .cta-inner { max-width: 640px; margin: 0 auto; text-align: center; }
-  .cta-inner .section-title { font-size: clamp(28px, 4vw, 50px); }
-  .cta-inner .section-sub { margin: 0 auto 36px; }
-  .cta-blossom { font-size: 48px; margin-bottom: 20px; display: block; }
+/* ── SECTIONS ── */
+section {
+  padding: 100px 5%;
+  max-width: 1400px; margin: 0 auto;
+}
+.section-label {
+  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--teal); margin-bottom: 16px; display: block;
+}
+.section-title {
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 4vw, 52px);
+  line-height: 1.15; font-weight: 700;
+  color: var(--cream); margin-bottom: 20px;
+}
+.section-title span { color: var(--gold); }
+.section-sub {
+  font-size: 17px; color: var(--muted);
+  max-width: 640px; line-height: 1.8;
+}
 
-  /* ── CONTACT ── */
-  .contact-section { background: var(--white); }
-  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
-  @media(max-width:768px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } }
-  .contact-info { }
-  .contact-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 24px; }
-  .contact-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
-  .contact-label { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--rose); margin-bottom: 3px; }
-  .contact-value { font-size: 15px; color: var(--text); }
-  .contact-value a { color: var(--rose); text-decoration: none; }
-  .contact-form { }
-  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
-  @media(max-width:480px) { .form-row { grid-template-columns: 1fr; } }
-  .form-group { margin-bottom: 14px; }
-  .form-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
-  .form-input {
-    width: 100%; background: var(--bg2); border: 1.5px solid var(--border);
-    border-radius: 12px; padding: 12px 16px; color: var(--text); font-size: 14px; outline: none;
-    font-family: inherit; transition: border-color .2s, box-shadow .2s;
-  }
-  .form-input:focus { border-color: var(--rose-light); box-shadow: 0 0 0 3px rgba(200,82,106,0.08); }
-  .form-select { width: 100%; background: var(--bg2); border: 1.5px solid var(--border); border-radius: 12px; padding: 12px 16px; color: var(--text); font-size: 14px; outline: none; font-family: inherit; -webkit-appearance: none; }
-  .form-select:focus { border-color: var(--rose-light); }
-  .form-submit { width: 100%; padding: 15px; background: linear-gradient(135deg, var(--rose), #a8384f); color: #fff; font-weight: 800; font-size: 15px; border: none; border-radius: 100px; cursor: pointer; font-family: inherit; box-shadow: 0 6px 24px rgba(200,82,106,0.3); transition: transform .2s, box-shadow .2s; }
-  .form-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(200,82,106,0.45); }
-  .form-success { display: none; text-align: center; padding: 40px 20px; }
-  .form-success .success-icon { font-size: 52px; margin-bottom: 16px; }
-  .form-success h3 { font-size: 20px; font-weight: 900; color: var(--rose); margin-bottom: 8px; }
-  .form-success p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+/* ── MISSION / ECO MANIFESTO ── */
+.mission-section {
+  background: linear-gradient(135deg, #0E0520 0%, #1A0835 50%, #0E0520 100%);
+  padding: 120px 5%; max-width: 100%;
+  position: relative; overflow: hidden;
+}
+.mission-inner { max-width: 1400px; margin: 0 auto; }
+.mission-kanji-bg {
+  position: absolute; top: -40px; right: 5%; opacity: 0.04;
+  font-size: 320px; font-family: Georgia, serif; color: var(--gold);
+  line-height: 1; pointer-events: none; user-select: none;
+}
+.mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.mission-quote {
+  font-family: Georgia, serif;
+  font-size: clamp(22px, 3vw, 38px);
+  line-height: 1.5; color: var(--cream);
+  font-style: italic;
+}
+.mission-quote .gold { color: var(--gold); }
+.mission-quote .sakura { color: var(--sakura); }
+.mission-pillars { display: flex; flex-direction: column; gap: 28px; }
+.pillar {
+  display: flex; gap: 20px; align-items: flex-start;
+}
+.pillar-icon {
+  width: 48px; height: 48px; flex-shrink: 0;
+  background: rgba(74,40,117,0.4); border: 1px solid var(--border-v);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+}
+.pillar-text h4 {
+  font-family: Georgia, serif; font-size: 16px; color: var(--gold);
+  letter-spacing: 0.06em; margin-bottom: 4px;
+}
+.pillar-text p { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
-  /* ── FOOTER ── */
-  footer {
-    background: var(--text);
-    padding: 48px clamp(16px,6vw,60px) 32px;
-  }
-  .footer-grid {
-    max-width: 1120px; margin: 0 auto;
-    display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px;
-  }
-  @media(max-width:640px) { .footer-grid { grid-template-columns: 1fr; } }
-  .footer-brand .wordmark { font-size: 22px; font-weight: 900; color: var(--rose-pale); margin-bottom: 10px; display: block; }
-  .footer-brand .wordmark em { color: var(--rose-light); font-style: normal; }
-  .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.7; }
-  .footer-col h4 { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--rose-light); margin-bottom: 16px; }
-  .footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,0.5); text-decoration: none; margin-bottom: 9px; transition: color .2s; }
-  .footer-col a:hover { color: var(--rose-light); }
-  .footer-bottom {
-    max-width: 1120px; margin: 0 auto;
-    padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
-    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px;
-    font-size: 12px; color: rgba(255,255,255,0.3);
-  }
-  .footer-blossom { font-size: 18px; }
+/* ── ECO STRIP ── */
+.eco-strip {
+  background: linear-gradient(135deg, #0A1F18, #0D2820);
+  border-top: 1px solid rgba(91,188,173,0.2);
+  border-bottom: 1px solid rgba(91,188,173,0.2);
+  padding: 60px 5%; max-width: 100%;
+}
+.eco-inner { max-width: 1400px; margin: 0 auto; }
+.eco-label { color: var(--teal); letter-spacing: 0.3em; font-size: 11px; text-transform: uppercase; margin-bottom: 16px; }
+.eco-headline { font-family: Georgia, serif; font-size: clamp(24px, 3vw, 40px); color: var(--cream); margin-bottom: 40px; }
+.eco-headline span { color: var(--teal); }
+.eco-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.eco-item {
+  background: rgba(63,175,158,0.06); border: 1px solid rgba(91,188,173,0.15);
+  padding: 28px 24px; text-align: center;
+}
+.eco-icon { font-size: 32px; margin-bottom: 12px; }
+.eco-title { font-size: 13px; letter-spacing: 0.12em; color: var(--teal); text-transform: uppercase; margin-bottom: 8px; }
+.eco-desc { font-size: 13px; color: var(--muted); line-height: 1.6; }
 
-  /* ── SCROLL ANIMATIONS ── */
-  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
-  .fade-up.visible { opacity: 1; transform: none; }
+/* ── ABOUT / CREDENTIALS ── */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.about-photo-block { position: relative; }
+.photo-placeholder {
+  width: 100%; aspect-ratio: 4/5;
+  background: linear-gradient(135deg, var(--deep), var(--rich));
+  border: 1px solid var(--border-v);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.photo-placeholder::before {
+  content: '桜'; font-size: 180px; color: rgba(232,150,200,0.06);
+  font-family: Georgia, serif; position: absolute;
+}
+.photo-inner-text {
+  text-align: center; z-index: 1;
+}
+.photo-inner-text .name-jp { font-size: 14px; color: var(--amethyst); letter-spacing: 0.2em; margin-bottom: 8px; }
+.photo-inner-text .name-en { font-family: Georgia, serif; font-size: 28px; color: var(--gold); }
+.honest-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(232,150,200,0.08); border: 1px solid rgba(232,150,200,0.2);
+  color: var(--blossom); font-size: 11px; letter-spacing: 0.1em;
+  padding: 8px 14px; margin-bottom: 20px;
+}
+.about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 32px; }
+.stat-box {
+  background: rgba(74,40,117,0.2); border: 1px solid var(--border-v);
+  padding: 20px; text-align: center;
+}
+.stat-num { font-family: Georgia, serif; font-size: 36px; color: var(--gold); line-height: 1; }
+.stat-label { font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
 
-  /* ── DIVIDER BLOSSOM ── */
-  .blossom-divider {
-    text-align: center; padding: 12px 0;
-    font-size: 18px; letter-spacing: 12px; color: var(--rose-pale);
-  }
+/* ── JOURNEY ── */
+.journey-section { background: var(--abyss); padding: 120px 5%; max-width: 100%; }
+.journey-inner { max-width: 1400px; margin: 0 auto; }
+.journey-intro { text-align: center; margin-bottom: 70px; }
+.journey-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 60px; }
+.journey-card {
+  background: linear-gradient(135deg, rgba(30,15,60,0.8), rgba(22,8,48,0.9));
+  border: 1px solid var(--border-v);
+  padding: 32px 28px; position: relative; overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.journey-card:hover { transform: translateY(-6px); box-shadow: var(--glow-v); }
+.journey-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(to right, var(--amethyst), var(--gold));
+}
+.journey-num { font-family: Georgia, serif; font-size: 52px; color: rgba(201,168,76,0.12); font-weight: 700; line-height: 1; margin-bottom: 12px; }
+.journey-card h3 { font-family: Georgia, serif; font-size: 18px; color: var(--gold); margin-bottom: 10px; }
+.journey-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.journey-status {
+  display: inline-block; font-size: 10px; letter-spacing: 0.15em;
+  padding: 4px 10px; margin-bottom: 12px; text-transform: uppercase;
+}
+.status-now { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
+.status-soon { background: rgba(123,79,160,0.15); color: var(--lavender); border: 1px solid rgba(123,79,160,0.3); }
+.status-dream { background: rgba(91,188,173,0.1); color: var(--teal); border: 1px solid rgba(91,188,173,0.3); }
 
-  /* ── TOAST ── */
-  #social-toast {
-    position: fixed; bottom: 28px; left: 28px; z-index: 800;
-    max-width: 300px; background: var(--white); border: 1px solid var(--border);
-    border-radius: 16px; padding: 14px 18px; display: none;
-    box-shadow: 0 8px 32px rgba(200,82,106,0.15);
-    animation: toast-in .35s ease;
-  }
-  .toast-inner { display: flex; align-items: center; gap: 12px; }
-  .toast-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--rose-light), var(--rose)); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
-  .toast-name { font-size: 12px; font-weight: 700; color: var(--text); }
-  .toast-action { font-size: 11px; color: var(--muted); margin-top: 2px; }
-  @keyframes toast-in { from { transform: translateY(12px); opacity: 0; } to { transform: none; opacity: 1; } }
-  @keyframes toast-out { from { opacity: 1; } to { opacity: 0; transform: translateY(8px); } }
+/* ── BIKE RIDING STRIP ── */
+.bike-strip {
+  background: linear-gradient(135deg, #0E0520, #1A0835, #0E0520);
+  border: 1px solid var(--border-v);
+  padding: 60px 5%; max-width: 100%;
+  position: relative; overflow: hidden;
+}
+.bike-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: center; }
+.bike-wheel-art { display: flex; align-items: center; justify-content: center; }
+.bike-quote { font-family: Georgia, serif; }
+.bike-quote blockquote {
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: var(--cream); font-style: italic; line-height: 1.5;
+  margin-bottom: 20px;
+}
+.bike-quote cite { font-size: 13px; color: var(--gold); letter-spacing: 0.12em; }
 
-  /* ── EMAIL CAPTURE MODAL ── */
-  #email-modal {
-    display: none; position: fixed; inset: 0; z-index: 700;
-    background: rgba(45,31,40,0.7); backdrop-filter: blur(8px);
-    align-items: center; justify-content: center; padding: 24px;
-  }
-  .email-modal-box {
-    background: var(--white); border-radius: 28px; padding: 48px 36px;
-    max-width: 460px; width: 100%; text-align: center; position: relative;
-    box-shadow: 0 0 80px rgba(200,82,106,0.2);
-  }
-  .modal-close-btn { position: absolute; top: 16px; right: 16px; background: var(--bg2); border: none; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 16px; color: var(--muted); display: flex; align-items: center; justify-content: center; }
-  .modal-blossom { font-size: 44px; margin-bottom: 12px; }
-  .modal-tag { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--rose); margin-bottom: 10px; }
-  .modal-title { font-size: 24px; font-weight: 900; color: var(--text); margin-bottom: 10px; line-height: 1.2; }
-  .modal-sub { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 24px; }
-  .modal-input { width: 100%; padding: 14px 18px; background: var(--bg2); border: 1.5px solid var(--border); border-radius: 12px; color: var(--text); font-size: 14px; font-family: inherit; outline: none; margin-bottom: 12px; }
-  .modal-input:focus { border-color: var(--rose-light); }
-  .modal-submit { width: 100%; padding: 15px; background: linear-gradient(135deg, var(--rose), #a8384f); color: #fff; border: none; border-radius: 100px; font-size: 15px; font-weight: 800; cursor: pointer; font-family: inherit; }
-  .modal-legal { font-size: 11px; color: var(--muted); margin-top: 10px; }
+/* ── PROGRAMS ── */
+.programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.program-card {
+  background: linear-gradient(160deg, rgba(22,8,48,0.9), rgba(14,5,32,0.95));
+  border: 1px solid var(--border-v); padding: 40px 32px;
+  transition: transform 0.3s, box-shadow 0.3s; position: relative;
+}
+.program-card.featured {
+  border-color: var(--gold);
+  background: linear-gradient(160deg, rgba(45,27,85,0.95), rgba(30,15,60,0.98));
+}
+.program-card.featured::after {
+  content: 'MOST POPULAR';
+  position: absolute; top: -1px; right: 24px;
+  background: var(--gold); color: var(--void);
+  font-size: 9px; letter-spacing: 0.2em; padding: 4px 12px; font-weight: 700;
+}
+.program-card:hover { transform: translateY(-6px); box-shadow: var(--glow-v); }
+.program-name { font-family: Georgia, serif; font-size: 22px; color: var(--gold); margin-bottom: 6px; }
+.program-jp { font-size: 13px; color: var(--amethyst); letter-spacing: 0.15em; margin-bottom: 16px; }
+.program-price { font-family: Georgia, serif; font-size: 40px; color: var(--cream); margin-bottom: 4px; }
+.program-price sup { font-size: 18px; vertical-align: super; }
+.program-period { font-size: 13px; color: var(--muted); margin-bottom: 24px; }
+.program-features { list-style: none; margin-bottom: 32px; }
+.program-features li {
+  font-size: 14px; color: var(--lavender); padding: 8px 0;
+  border-bottom: 1px solid rgba(180,130,230,0.1);
+  display: flex; align-items: center; gap: 10px;
+}
+.program-features li::before { content: '✦'; color: var(--gold); font-size: 10px; flex-shrink: 0; }
+
+/* ── DIGITAL SHOP ── */
+.shop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.shop-item {
+  background: linear-gradient(160deg, rgba(22,8,48,0.8), rgba(14,5,32,0.9));
+  border: 1px solid var(--border-v); padding: 32px 24px;
+  text-align: center; transition: transform 0.3s, box-shadow 0.3s;
+}
+.shop-item:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(123,79,160,0.2); }
+.shop-icon { font-size: 40px; margin-bottom: 16px; }
+.shop-name { font-family: Georgia, serif; font-size: 16px; color: var(--gold); margin-bottom: 8px; }
+.shop-desc { font-size: 13px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+.shop-price { font-family: Georgia, serif; font-size: 28px; color: var(--cream); margin-bottom: 20px; }
+
+/* ── BOOK ── */
+.book-section {
+  background: radial-gradient(ellipse at 50% 50%, rgba(45,27,85,0.5) 0%, transparent 70%),
+              linear-gradient(180deg, var(--abyss), var(--void));
+  padding: 120px 5%; max-width: 100%;
+}
+.book-inner { max-width: 1400px; margin: 0 auto; text-align: center; }
+.book-title-display {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 6vw, 80px);
+  background: linear-gradient(135deg, var(--gold) 0%, var(--sakura) 50%, var(--lavender) 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  line-height: 1.1; margin-bottom: 8px;
+}
+.book-subtitle { font-size: 16px; color: var(--amethyst); letter-spacing: 0.1em; margin-bottom: 40px; font-style: italic; }
+.waitlist-form { display: flex; gap: 12px; max-width: 480px; margin: 0 auto; }
+.waitlist-input {
+  flex: 1; padding: 14px 20px;
+  background: rgba(180,130,230,0.08); border: 1px solid var(--border-v);
+  color: var(--cream); font-size: 14px;
+  outline: none;
+}
+.waitlist-input:focus { border-color: var(--gold); }
+.waitlist-input::placeholder { color: var(--muted); }
+
+/* ── DAD'S MESSAGE ── */
+.dad-section {
+  background: linear-gradient(135deg, #1A0D30, #100520, #0A0318);
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 120px 5%; max-width: 100%;
+}
+.dad-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+.dad-label {
+  font-size: 11px; letter-spacing: 0.3em; color: var(--teal);
+  text-transform: uppercase; margin-bottom: 32px; display: block;
+}
+.dad-message {
+  font-family: Georgia, serif; font-size: clamp(18px, 2.5vw, 26px);
+  color: var(--cream); line-height: 1.8; font-style: italic;
+  margin-bottom: 40px;
+}
+.dad-message .highlight { color: var(--gold); }
+.dad-message .sakura { color: var(--sakura); }
+.dad-sig {
+  display: flex; align-items: center; justify-content: center; gap: 20px;
+}
+.dad-sig-line { width: 80px; height: 1px; background: var(--border); }
+.dad-sig-name { font-family: Georgia, serif; font-size: 16px; color: var(--gold); letter-spacing: 0.1em; }
+
+/* ── TESTIMONIALS ── */
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.testi-card {
+  background: rgba(30,15,60,0.6); border: 1px solid var(--border-v);
+  padding: 32px 28px; position: relative;
+}
+.testi-card::before { content: '"'; font-family: Georgia, serif; font-size: 60px; color: rgba(201,168,76,0.15); position: absolute; top: 16px; left: 24px; line-height: 1; }
+.testi-text { font-size: 15px; color: var(--lavender); line-height: 1.8; margin-bottom: 20px; font-style: italic; }
+.testi-name { font-size: 13px; color: var(--gold); letter-spacing: 0.08em; }
+.testi-role { font-size: 12px; color: var(--muted); }
+.sample-badge {
+  display: inline-block; font-size: 9px; letter-spacing: 0.15em;
+  background: rgba(74,40,117,0.2); border: 1px solid var(--border-v);
+  color: var(--muted); padding: 3px 8px; margin-bottom: 20px; text-transform: uppercase;
+}
+
+/* ── COMMUNITY / JEFFY ── */
+.community-section { text-align: center; }
+.jeffy-box {
+  background: linear-gradient(135deg, rgba(74,40,117,0.25), rgba(22,8,48,0.6));
+  border: 1px solid var(--border-v); padding: 48px;
+  max-width: 700px; margin: 0 auto;
+}
+.jeffy-crown { font-size: 48px; margin-bottom: 16px; }
+.jeffy-name { font-family: Georgia, serif; font-size: 26px; color: var(--gold); margin-bottom: 8px; }
+.jeffy-title { font-size: 13px; color: var(--amethyst); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 16px; }
+.jeffy-msg { font-size: 15px; color: var(--lavender); line-height: 1.7; }
+
+/* ── CONTACT ── */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+.contact-info h3 { font-family: Georgia, serif; font-size: 28px; color: var(--gold); margin-bottom: 20px; }
+.contact-detail { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.contact-icon { width: 36px; height: 36px; background: rgba(74,40,117,0.3); border: 1px solid var(--border-v); display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+.contact-text { font-size: 14px; color: var(--lavender); }
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.form-input, .form-textarea {
+  background: rgba(180,130,230,0.06); border: 1px solid var(--border-v);
+  color: var(--cream); padding: 14px 18px; font-size: 14px;
+  font-family: inherit; outline: none; transition: border-color 0.2s;
+}
+.form-input:focus, .form-textarea:focus { border-color: var(--gold); }
+.form-input::placeholder, .form-textarea::placeholder { color: var(--muted); }
+.form-textarea { min-height: 120px; resize: vertical; }
+
+/* ── SOCIAL BAR ── */
+.social-bar { display: flex; gap: 16px; margin-top: 32px; flex-wrap: wrap; }
+.social-link {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(74,40,117,0.2); border: 1px solid var(--border-v);
+  color: var(--lavender); font-size: 12px; letter-spacing: 0.1em;
+  padding: 8px 16px; text-decoration: none; transition: all 0.2s;
+  text-transform: uppercase;
+}
+.social-link:hover { border-color: var(--gold); color: var(--gold); }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--void); border-top: 1px solid var(--border);
+  padding: 60px 5% 40px;
+}
+.footer-inner { max-width: 1400px; margin: 0 auto; }
+.footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; margin-bottom: 48px; }
+.footer-brand h3 { font-family: Georgia, serif; font-size: 20px; color: var(--gold); margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; color: var(--muted); line-height: 1.8; max-width: 280px; }
+.footer-col h4 { font-size: 11px; letter-spacing: 0.2em; color: var(--teal); text-transform: uppercase; margin-bottom: 16px; }
+.footer-col a { display: block; font-size: 13px; color: var(--muted); text-decoration: none; margin-bottom: 10px; transition: color 0.2s; }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom {
+  border-top: 1px solid var(--border); padding-top: 24px;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
+}
+.footer-copy { font-size: 12px; color: var(--muted); }
+.footer-kanji { font-family: Georgia, serif; font-size: 14px; color: var(--amethyst); letter-spacing: 0.15em; }
+
+/* ── MOBILE ── */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-right { display: none; }
+  .mission-grid, .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .eco-grid { grid-template-columns: 1fr 1fr; }
+  .journey-grid, .programs-grid, .testi-grid { grid-template-columns: 1fr; }
+  .shop-grid { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .bike-inner { grid-template-columns: 1fr; }
+  .bike-wheel-art { display: none; }
+  .nav-links { display: none; }
+}
+@media (max-width: 580px) {
+  .eco-grid, .shop-grid, .footer-top { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; }
+  .waitlist-form { flex-direction: column; }
+}
 </style>
 </head>
 <body>
 
-<!-- ── CHERRY BLOSSOM CANVAS ── -->
+<!-- CHERRY BLOSSOM CANVAS -->
 <canvas id="blossom-canvas"></canvas>
 
-<!-- ── NAV ── -->
+<!-- ════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════ -->
 <nav>
-  <a href="/" class="nav-logo">
-    <!-- Makayla Francisco MindShift Logo SVG -->
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Cherry blossom flower -->
-      <g transform="translate(20,20)">
-        <!-- 5 petals -->
-        <ellipse cx="0" cy="-9" rx="3.5" ry="6" fill="#E8899A" opacity="0.9" transform="rotate(0)"/>
-        <ellipse cx="0" cy="-9" rx="3.5" ry="6" fill="#D4607A" opacity="0.85" transform="rotate(72)"/>
-        <ellipse cx="0" cy="-9" rx="3.5" ry="6" fill="#E8899A" opacity="0.9" transform="rotate(144)"/>
-        <ellipse cx="0" cy="-9" rx="3.5" ry="6" fill="#D4607A" opacity="0.85" transform="rotate(216)"/>
-        <ellipse cx="0" cy="-9" rx="3.5" ry="6" fill="#E8899A" opacity="0.9" transform="rotate(288)"/>
-        <!-- Center -->
-        <circle cx="0" cy="0" r="3.5" fill="#C9A565"/>
-        <circle cx="0" cy="0" r="1.5" fill="#a87830"/>
-        <!-- Stamens -->
-        <circle cx="0" cy="-3" r="0.7" fill="#fff" opacity="0.9"/>
-        <circle cx="2.5" cy="-1.5" r="0.7" fill="#fff" opacity="0.9"/>
-        <circle cx="-2.5" cy="-1.5" r="0.7" fill="#fff" opacity="0.9"/>
-      </g>
-    </svg>
-    <div>
-      <div class="nav-wordmark"><em>Mind</em>Shift</div>
-      <div class="nav-sub">by Makayla Francisco</div>
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <!-- Inline mini brand seal -->
+      <svg class="nav-logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="150,18 218,40 268,100 278,170 248,240 185,278 115,278 52,240 22,170 32,100 82,40" fill="none" stroke="#C9A84C" stroke-width="5"/>
+        <polygon points="150,22 215,43 263,101 273,169 244,237 183,274 117,274 56,237 27,169 37,101 85,43" fill="#1A0035"/>
+        <circle cx="150" cy="150" r="108" fill="none" stroke="#7B4FA0" stroke-width="1.5" opacity="0.5"/>
+        <ellipse transform="translate(150,42)" cx="0" cy="0" rx="7" ry="11" fill="#E896C8"/>
+        <ellipse transform="translate(214.6,68.4)" cx="0" cy="0" rx="7" ry="11" fill="#5BBCAD"/>
+        <ellipse transform="translate(254.6,131)" cx="0" cy="0" rx="7" ry="11" fill="#E896C8"/>
+        <ellipse transform="translate(254.6,169)" cx="0" cy="0" rx="7" ry="11" fill="#5BBCAD"/>
+        <ellipse transform="translate(214.6,231.6)" cx="0" cy="0" rx="7" ry="11" fill="#E896C8"/>
+        <ellipse transform="translate(150,258)" cx="0" cy="0" rx="7" ry="11" fill="#5BBCAD"/>
+        <ellipse transform="translate(85.4,231.6)" cx="0" cy="0" rx="7" ry="11" fill="#E896C8"/>
+        <ellipse transform="translate(45.4,169)" cx="0" cy="0" rx="7" ry="11" fill="#5BBCAD"/>
+        <ellipse transform="translate(45.4,131)" cx="0" cy="0" rx="7" ry="11" fill="#E896C8"/>
+        <ellipse transform="translate(85.4,68.4)" cx="0" cy="0" rx="7" ry="11" fill="#5BBCAD"/>
+        <polygon points="150,76 194,101 194,201 150,226 106,201 106,101" fill="#0E0520" stroke="#C9A84C" stroke-width="2"/>
+        <g transform="translate(150,148)">
+          <ellipse transform="rotate(0)" cx="0" cy="-26" rx="14" ry="22" fill="#E896C8" opacity="0.95"/>
+          <ellipse transform="rotate(72)" cx="0" cy="-26" rx="14" ry="22" fill="#F4C8E0" opacity="0.95"/>
+          <ellipse transform="rotate(144)" cx="0" cy="-26" rx="14" ry="22" fill="#E896C8" opacity="0.95"/>
+          <ellipse transform="rotate(216)" cx="0" cy="-26" rx="14" ry="22" fill="#F4C8E0" opacity="0.95"/>
+          <ellipse transform="rotate(288)" cx="0" cy="-26" rx="14" ry="22" fill="#E896C8" opacity="0.95"/>
+          <circle cx="0" cy="0" r="12" fill="#C9A84C"/>
+        </g>
+        <text x="150" y="224" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#C9A84C" text-anchor="middle">M</text>
+      </svg>
+      <span class="nav-name">MINDSHIFT</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#programs">Coaching</a>
+      <a href="#shop">Shop</a>
+      <a href="#book">Book</a>
+      <a href="#contact">Connect</a>
+      <a href="#programs" class="nav-cta">Work With Me</a>
     </div>
-  </a>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#programs">Programs</a>
-    <a href="#science">The Science</a>
-    <a href="#contact">Contact</a>
-    <a href="#programs" class="nav-cta">Choose Program</a>
   </div>
 </nav>
 
-<!-- ── HERO ── -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">🌸 Neuroplasticity-Based Coaching</div>
-    <h1 class="hero-title">
-      Bloom Into<br>
-      <span class="rose-grad">Who You Are</span>
-    </h1>
-    <p class="hero-sub">
-      Personal growth coaching rooted in neuroscience.
-      <strong>Your patterns can change. Your mind can bloom.</strong>
-      This is where your transformation begins.
+<!-- ════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-left reveal">
+      <span class="hero-kana">Kokoro No Tenkan · 心の転換</span>
+      <h1 class="hero-kanji">
+        <span>The World Shifts<br>When One Mind<br>Transforms.</span>
+        <span class="kanji-chars">心　·　魂　·　変革</span>
+      </h1>
+      <p class="hero-sub">Fourth Year Psychology Graduate · Mindset Coach · Future Author</p>
+      <p class="hero-tagline">Psychology <span>·</span> Sustainability <span>·</span> Sovereignty · Age 21</p>
+      <div class="hero-btns">
+        <a href="#programs" class="btn-primary">Begin Your Transformation</a>
+        <a href="#book" class="btn-outline">Pre-Order My Book</a>
+      </div>
+      <div class="hero-credentials">
+        <span class="cred-badge">🎓 B.Sc. Psychology</span>
+        <span class="cred-badge">🌸 Mindset Coach</span>
+        <span class="cred-badge">✍️ Future Author</span>
+        <span class="cred-badge">🌱 Eco Activist</span>
+      </div>
+    </div>
+
+    <!-- BONSAI HERO ART -->
+    <div class="hero-right">
+      <div class="bonsai-glow"></div>
+      <div class="bonsai-frame">
+        <svg viewBox="0 0 480 560" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+          <defs>
+            <radialGradient id="trunkGrad" cx="40%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#6B4423"/>
+              <stop offset="100%" stop-color="#3D2210"/>
+            </radialGradient>
+            <radialGradient id="blossomGrad1" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#F4C8E0" stop-opacity="0.95"/>
+              <stop offset="70%" stop-color="#E896C8" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#C96FAA" stop-opacity="0.7"/>
+            </radialGradient>
+            <radialGradient id="blossomGrad2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#D4BFEE" stop-opacity="0.9"/>
+              <stop offset="70%" stop-color="#B08FD0" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#7B4FA0" stop-opacity="0.6"/>
+            </radialGradient>
+            <radialGradient id="potGrad" cx="50%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="#2D2560"/>
+              <stop offset="100%" stop-color="#140F35"/>
+            </radialGradient>
+            <filter id="blossom-glow">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+          </defs>
+
+          <!-- STAND / TOKONOMA BASE -->
+          <rect x="155" y="505" width="170" height="8" rx="2" fill="#3D2210" opacity="0.6"/>
+          <rect x="165" y="498" width="150" height="10" rx="1" fill="#2A1808" opacity="0.5"/>
+          <!-- Stand legs -->
+          <rect x="170" y="498" width="14" height="20" rx="1" fill="#2A1808" opacity="0.4"/>
+          <rect x="296" y="498" width="14" height="20" rx="1" fill="#2A1808" opacity="0.4"/>
+
+          <!-- BONSAI POT (traditional rectangular, gold-rimmed) -->
+          <!-- Pot body — slight trapezoid -->
+          <path d="M152,488 L175,430 L305,430 L328,488 Z" fill="url(#potGrad)"/>
+          <!-- Pot rim (top) — gold -->
+          <rect x="170" y="426" width="140" height="10" rx="2" fill="#1A1545" stroke="#C9A84C" stroke-width="1.5"/>
+          <!-- Pot side stripes (decorative) -->
+          <line x1="200" y1="435" x2="195" y2="482" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+          <line x1="240" y1="435" x2="240" y2="483" stroke="rgba(201,168,76,0.2)" stroke-width="0.5"/>
+          <line x1="280" y1="435" x2="285" y2="482" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+          <!-- Pot bottom line -->
+          <path d="M152,488 L328,488" stroke="#C9A84C" stroke-width="1.5" opacity="0.6"/>
+          <!-- Pot feet (3 small bumps) -->
+          <ellipse cx="185" cy="490" rx="10" ry="5" fill="#120E30"/>
+          <ellipse cx="240" cy="491" rx="10" ry="5" fill="#120E30"/>
+          <ellipse cx="295" cy="490" rx="10" ry="5" fill="#120E30"/>
+
+          <!-- SOIL surface in pot -->
+          <ellipse cx="240" cy="432" rx="65" ry="8" fill="#2A1A0A" opacity="0.7"/>
+          <!-- Small stones decoration on soil -->
+          <ellipse cx="215" cy="433" rx="6" ry="3" fill="#3D3028" opacity="0.6"/>
+          <ellipse cx="235" cy="434" rx="4" ry="2" fill="#4A3828" opacity="0.5"/>
+          <ellipse cx="260" cy="432" rx="5" ry="3" fill="#3D3028" opacity="0.6"/>
+          <ellipse cx="245" cy="434" rx="3" ry="1.5" fill="#5A4838" opacity="0.4"/>
+
+          <!-- NEBARI / SURFACE ROOTS (spread from base) -->
+          <path d="M240,430 Q210,428 195,435 Q185,440 178,445" stroke="#4A2E12" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.8"/>
+          <path d="M240,430 Q260,427 272,432 Q285,437 295,442" stroke="#4A2E12" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <path d="M240,430 Q238,428 230,432 Q220,436 214,440" stroke="#3D2210" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <path d="M240,430 Q245,427 252,432 Q262,436 268,441" stroke="#3D2210" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+          <!-- MAIN TRUNK — sculptured, aged curves (the beauty of bonsai) -->
+          <!-- Primary trunk -->
+          <path d="M240,430 Q238,390 230,355 Q218,310 225,270 Q232,235 220,200 Q210,168 215,140 Q222,112 230,88" stroke="url(#trunkGrad)" stroke-width="22" fill="none" stroke-linecap="round"/>
+          <!-- Trunk highlight -->
+          <path d="M240,430 Q238,390 230,355 Q218,310 225,270 Q232,235 220,200 Q210,168 215,140 Q222,112 230,88" stroke="rgba(107,68,35,0.5)" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <!-- Trunk detail (bark texture lines) -->
+          <path d="M236,420 Q234,385 227,355" stroke="rgba(61,34,16,0.4)" stroke-width="2" fill="none"/>
+          <path d="M242,405 Q240,375 233,345" stroke="rgba(80,50,25,0.3)" stroke-width="1.5" fill="none"/>
+
+          <!-- BRANCH 1 — left mid (most prominent) -->
+          <path d="M222,270 Q190,255 160,245 Q135,238 112,248" stroke="url(#trunkGrad)" stroke-width="11" fill="none" stroke-linecap="round"/>
+          <path d="M165,245 Q148,235 132,230 Q118,225 106,232" stroke="#5A3818" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <!-- Branch 1 sub-branches -->
+          <path d="M140,242 Q128,228 118,218 Q108,210 98,210" stroke="#4A2E12" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M115,236 Q104,228 96,225 Q88,222 84,228" stroke="#3D2210" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+          <!-- BRANCH 2 — right mid -->
+          <path d="M224,200 Q255,185 282,175 Q305,167 325,172" stroke="url(#trunkGrad)" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <path d="M290,174 Q310,162 330,158 Q348,155 360,162" stroke="#5A3818" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <!-- Branch 2 sub-branches -->
+          <path d="M338,160 Q350,148 360,140 Q370,133 378,136" stroke="#3D2210" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+          <!-- BRANCH 3 — left lower -->
+          <path d="M228,320 Q205,308 182,302 Q162,298 145,306" stroke="#4A2E12" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M158,304 Q142,296 128,293 Q115,290 108,298" stroke="#3D2210" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+          <!-- BRANCH 4 — right upper -->
+          <path d="M220,140 Q242,122 265,112 Q285,104 302,108" stroke="#4A2E12" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <path d="M288,110 Q305,100 320,96 Q334,93 342,100" stroke="#3D2210" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+
+          <!-- APEX twig -->
+          <path d="M230,88 Q224,72 220,58 Q217,46 222,38" stroke="#3D2210" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M230,88 Q240,70 248,56 Q254,44 248,34" stroke="#3D2210" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M228,88 Q215,74 208,62 Q202,52 206,42" stroke="#2A1808" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+          <!-- TRAINING WIRE (shows it's sculpted) — on branch 2 -->
+          <path d="M224,200 Q240,190 260,182 Q280,175 295,174" stroke="#C9A84C" stroke-width="1.2" fill="none" opacity="0.5" stroke-dasharray="none"/>
+
+          <!-- ═══ BLOSSOM CLOUD 1 — main left cluster (large) ═══ -->
+          <g filter="url(#blossom-glow)" opacity="0.95">
+            <!-- Main puff -->
+            <ellipse cx="95" cy="215" rx="72" ry="55" fill="url(#blossomGrad1)"/>
+            <ellipse cx="68" cy="228" rx="48" ry="36" fill="url(#blossomGrad2)" opacity="0.7"/>
+            <ellipse cx="122" cy="200" rx="55" ry="40" fill="url(#blossomGrad1)" opacity="0.8"/>
+            <ellipse cx="85" cy="195" rx="40" ry="30" fill="#F4C8E0" opacity="0.4"/>
+            <!-- Individual petals scattered in cloud -->
+            <g transform="translate(82,205)">
+              <ellipse transform="rotate(0)" cx="0" cy="-8" rx="4" ry="7" fill="#FBDCE5"/>
+              <ellipse transform="rotate(72)" cx="0" cy="-8" rx="4" ry="7" fill="#E896C8"/>
+              <ellipse transform="rotate(144)" cx="0" cy="-8" rx="4" ry="7" fill="#FBDCE5"/>
+              <ellipse transform="rotate(216)" cx="0" cy="-8" rx="4" ry="7" fill="#E896C8"/>
+              <ellipse transform="rotate(288)" cx="0" cy="-8" rx="4" ry="7" fill="#FBDCE5"/>
+              <circle cx="0" cy="0" r="3.5" fill="#C9A84C"/>
+            </g>
+            <g transform="translate(110,218)">
+              <ellipse transform="rotate(20)" cx="0" cy="-7" rx="3.5" ry="6" fill="#F4C8E0"/>
+              <ellipse transform="rotate(92)" cx="0" cy="-7" rx="3.5" ry="6" fill="#E896C8"/>
+              <ellipse transform="rotate(164)" cx="0" cy="-7" rx="3.5" ry="6" fill="#F4C8E0"/>
+              <ellipse transform="rotate(236)" cx="0" cy="-7" rx="3.5" ry="6" fill="#D4BFEE"/>
+              <ellipse transform="rotate(308)" cx="0" cy="-7" rx="3.5" ry="6" fill="#F4C8E0"/>
+              <circle cx="0" cy="0" r="3" fill="#E8C97A"/>
+            </g>
+            <g transform="translate(65,225)">
+              <ellipse transform="rotate(10)" cx="0" cy="-6" rx="3" ry="5.5" fill="#FBDCE5"/>
+              <ellipse transform="rotate(82)" cx="0" cy="-6" rx="3" ry="5.5" fill="#D4BFEE"/>
+              <ellipse transform="rotate(154)" cx="0" cy="-6" rx="3" ry="5.5" fill="#FBDCE5"/>
+              <ellipse transform="rotate(226)" cx="0" cy="-6" rx="3" ry="5.5" fill="#E896C8"/>
+              <ellipse transform="rotate(298)" cx="0" cy="-6" rx="3" ry="5.5" fill="#FBDCE5"/>
+              <circle cx="0" cy="0" r="2.5" fill="#C9A84C"/>
+            </g>
+          </g>
+
+          <!-- ═══ BLOSSOM CLOUD 2 — right middle cluster ═══ -->
+          <g filter="url(#blossom-glow)" opacity="0.95">
+            <ellipse cx="355" cy="155" rx="65" ry="50" fill="url(#blossomGrad2)"/>
+            <ellipse cx="330" cy="162" rx="42" ry="32" fill="url(#blossomGrad1)" opacity="0.75"/>
+            <ellipse cx="375" cy="140" rx="48" ry="36" fill="url(#blossomGrad2)" opacity="0.8"/>
+            <g transform="translate(348,150)">
+              <ellipse transform="rotate(0)" cx="0" cy="-8" rx="4" ry="7" fill="#D4BFEE"/>
+              <ellipse transform="rotate(72)" cx="0" cy="-8" rx="4" ry="7" fill="#E896C8"/>
+              <ellipse transform="rotate(144)" cx="0" cy="-8" rx="4" ry="7" fill="#D4BFEE"/>
+              <ellipse transform="rotate(216)" cx="0" cy="-8" rx="4" ry="7" fill="#B08FD0"/>
+              <ellipse transform="rotate(288)" cx="0" cy="-8" rx="4" ry="7" fill="#D4BFEE"/>
+              <circle cx="0" cy="0" r="3.5" fill="#C9A84C"/>
+            </g>
+            <g transform="translate(372,145)">
+              <ellipse transform="rotate(15)" cx="0" cy="-7" rx="3.5" ry="6" fill="#E896C8"/>
+              <ellipse transform="rotate(87)" cx="0" cy="-7" rx="3.5" ry="6" fill="#D4BFEE"/>
+              <ellipse transform="rotate(159)" cx="0" cy="-7" rx="3.5" ry="6" fill="#FBDCE5"/>
+              <ellipse transform="rotate(231)" cx="0" cy="-7" rx="3.5" ry="6" fill="#B08FD0"/>
+              <ellipse transform="rotate(303)" cx="0" cy="-7" rx="3.5" ry="6" fill="#E896C8"/>
+              <circle cx="0" cy="0" r="2.8" fill="#E8C97A"/>
+            </g>
+          </g>
+
+          <!-- ═══ BLOSSOM CLOUD 3 — left lower cluster ═══ -->
+          <g filter="url(#blossom-glow)" opacity="0.9">
+            <ellipse cx="112" cy="298" rx="60" ry="44" fill="url(#blossomGrad1)" opacity="0.85"/>
+            <ellipse cx="88" cy="305" rx="38" ry="30" fill="url(#blossomGrad2)" opacity="0.7"/>
+            <ellipse cx="134" cy="290" rx="42" ry="32" fill="url(#blossomGrad1)" opacity="0.8"/>
+            <g transform="translate(108,297)">
+              <ellipse transform="rotate(0)" cx="0" cy="-7" rx="3.5" ry="6" fill="#FBDCE5"/>
+              <ellipse transform="rotate(72)" cx="0" cy="-7" rx="3.5" ry="6" fill="#E896C8"/>
+              <ellipse transform="rotate(144)" cx="0" cy="-7" rx="3.5" ry="6" fill="#FBDCE5"/>
+              <ellipse transform="rotate(216)" cx="0" cy="-7" rx="3.5" ry="6" fill="#D4BFEE"/>
+              <ellipse transform="rotate(288)" cx="0" cy="-7" rx="3.5" ry="6" fill="#FBDCE5"/>
+              <circle cx="0" cy="0" r="3" fill="#C9A84C"/>
+            </g>
+          </g>
+
+          <!-- ═══ BLOSSOM CLOUD 4 — apex cluster ═══ -->
+          <g filter="url(#blossom-glow)" opacity="0.95">
+            <ellipse cx="228" cy="52" rx="52" ry="42" fill="url(#blossomGrad1)"/>
+            <ellipse cx="210" cy="60" rx="35" ry="28" fill="url(#blossomGrad2)" opacity="0.7"/>
+            <ellipse cx="245" cy="44" rx="38" ry="30" fill="url(#blossomGrad1)" opacity="0.85"/>
+            <g transform="translate(226,52)">
+              <ellipse transform="rotate(0)" cx="0" cy="-8" rx="4.5" ry="7.5" fill="#FBDCE5"/>
+              <ellipse transform="rotate(72)" cx="0" cy="-8" rx="4.5" ry="7.5" fill="#E896C8"/>
+              <ellipse transform="rotate(144)" cx="0" cy="-8" rx="4.5" ry="7.5" fill="#D4BFEE"/>
+              <ellipse transform="rotate(216)" cx="0" cy="-8" rx="4.5" ry="7.5" fill="#FBDCE5"/>
+              <ellipse transform="rotate(288)" cx="0" cy="-8" rx="4.5" ry="7.5" fill="#E896C8"/>
+              <circle cx="0" cy="0" r="4" fill="#C9A84C"/>
+            </g>
+          </g>
+
+          <!-- FALLING PETALS around bonsai (static decorative) -->
+          <g opacity="0.7">
+            <ellipse transform="translate(170,120) rotate(25)" cx="0" cy="-5" rx="4" ry="7" fill="#E896C8"/>
+            <ellipse transform="translate(300,200) rotate(-15)" cx="0" cy="-4" rx="3.5" ry="6" fill="#D4BFEE"/>
+            <ellipse transform="translate(145,350) rotate(40)" cx="0" cy="-4" rx="3" ry="5.5" fill="#FBDCE5"/>
+            <ellipse transform="translate(330,300) rotate(-30)" cx="0" cy="-4" rx="3.5" ry="6" fill="#E896C8"/>
+            <ellipse transform="translate(190,170) rotate(60)" cx="0" cy="-3" rx="3" ry="5" fill="#D4BFEE"/>
+            <ellipse transform="translate(280,380) rotate(-20)" cx="0" cy="-4" rx="3" ry="5.5" fill="#FBDCE5"/>
+            <ellipse transform="translate(380,250) rotate(45)" cx="0" cy="-3.5" rx="3" ry="5" fill="#E896C8"/>
+            <ellipse transform="translate(60,180) rotate(-35)" cx="0" cy="-4" rx="3" ry="5.5" fill="#D4BFEE"/>
+          </g>
+
+          <!-- BRAND SEAL OVERLAY (small, bottom right of bonsai composition) -->
+          <g transform="translate(370,440) scale(0.22)" opacity="0.6">
+            <polygon points="150,18 218,40 268,100 278,170 248,240 185,278 115,278 52,240 22,170 32,100 82,40" fill="none" stroke="#C9A84C" stroke-width="5"/>
+            <polygon points="150,22 215,43 263,101 273,169 244,237 183,274 117,274 56,237 27,169 37,101 85,43" fill="rgba(22,8,48,0.8)"/>
+            <g transform="translate(150,148)">
+              <ellipse transform="rotate(0)" cx="0" cy="-24" rx="13" ry="20" fill="#E896C8"/>
+              <ellipse transform="rotate(72)" cx="0" cy="-24" rx="13" ry="20" fill="#F4C8E0"/>
+              <ellipse transform="rotate(144)" cx="0" cy="-24" rx="13" ry="20" fill="#E896C8"/>
+              <ellipse transform="rotate(216)" cx="0" cy="-24" rx="13" ry="20" fill="#F4C8E0"/>
+              <ellipse transform="rotate(288)" cx="0" cy="-24" rx="13" ry="20" fill="#E896C8"/>
+              <circle cx="0" cy="0" r="11" fill="#C9A84C"/>
+            </g>
+            <text x="150" y="220" font-family="Georgia,serif" font-size="22" fill="#C9A84C" text-anchor="middle">M</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     MISSION MANIFESTO
+════════════════════════════════════════════ -->
+<div class="mission-section">
+  <div class="mission-kanji-bg">転</div>
+  <div class="mission-inner">
+    <div class="divider" style="margin-bottom:80px;padding:0;">
+      <div class="divider-line"></div>
+      <span class="divider-symbol">✦</span>
+      <div class="divider-line"></div>
+    </div>
+    <div class="mission-grid reveal">
+      <div>
+        <span class="section-label">The Philosophy</span>
+        <p class="mission-quote">
+          "The most powerful revolution<br>doesn't happen in the streets —<br>
+          it happens in the <span class="gold">silence of a single mind</span><br>
+          choosing to <span class="sakura">transform.</span>"
+        </p>
+        <div style="margin-top:32px;">
+          <p style="font-size:15px;color:var(--muted);line-height:1.9;">
+            心の転換 — Kokoro No Tenkan — means the transformation of heart and mind.
+            It is the ancient Japanese understanding that lasting change begins within,
+            radiates outward, and ultimately reshapes the world. This is MindShift.
+          </p>
+        </div>
+      </div>
+      <div class="mission-pillars">
+        <div class="pillar">
+          <div class="pillar-icon">🧠</div>
+          <div class="pillar-text">
+            <h4>Psychology</h4>
+            <p>Evidence-informed mindset work grounded in four years of university-level psychological science. The science of how minds change — applied to real people, real lives.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🌍</div>
+          <div class="pillar-text">
+            <h4>Sustainability</h4>
+            <p>Every product, every decision, every system built under MindShift honours the planet. Biodegradable materials. Carbon-neutral delivery. Zero-waste philosophy.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">⚡</div>
+          <div class="pillar-text">
+            <h4>Sovereignty</h4>
+            <p>True transformation grants you sovereignty — over your thoughts, your time, your future. MindShift builds people who no longer need to be led. They lead themselves.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     ECO MANIFESTO STRIP
+════════════════════════════════════════════ -->
+<div class="eco-strip">
+  <div class="eco-inner reveal">
+    <span class="eco-label">🌱 The Planet Manifesto</span>
+    <h2 class="eco-headline">MindShift doesn't just <span>shift minds.</span><br>It shifts the world we leave behind.</h2>
+    <div class="eco-grid">
+      <div class="eco-item">
+        <div class="eco-icon">♻️</div>
+        <div class="eco-title">Biodegradable Everything</div>
+        <div class="eco-desc">Every physical product — packaging, materials, ink — is 100% biodegradable or sustainably sourced.</div>
+      </div>
+      <div class="eco-item">
+        <div class="eco-icon">🌿</div>
+        <div class="eco-title">Carbon Neutral</div>
+        <div class="eco-desc">All digital infrastructure is offset. Every delivery is carbon-neutral through verified offset programs.</div>
+      </div>
+      <div class="eco-item">
+        <div class="eco-icon">🌊</div>
+        <div class="eco-title">Zero Waste Ops</div>
+        <div class="eco-desc">No waste in production. Digital-first. When physical goods exist, they are built to last and designed for the earth.</div>
+      </div>
+      <div class="eco-item">
+        <div class="eco-icon">🦋</div>
+        <div class="eco-title">1% For The Planet</div>
+        <div class="eco-desc">1% of all MindShift revenue goes to environmental restoration — reforestation, ocean cleanup, and soil regeneration.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
+<section id="about" class="reveal">
+  <div class="about-grid">
+    <div class="about-photo-block">
+      <div class="photo-placeholder">
+        <div class="photo-inner-text">
+          <div class="name-jp">フランシスコ　まかいら</div>
+          <div class="name-en">Makayla Francisco</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <span class="section-label">About Makayla</span>
+      <h2 class="section-title">21. Psychology Graduate.<br><span>World Changer.</span></h2>
+
+      <div class="honest-badge">
+        ✓ Credentials disclosed honestly — no false claims
+      </div>
+
+      <p style="font-size:16px;color:var(--lavender);line-height:1.9;margin-bottom:24px;">
+        Makayla Francisco completed her fourth year of a Bachelor of Science in Psychology at age 21 —
+        one of the youngest in her cohort. She is a trained mindset coach, a future published author,
+        and the founder of MindShift, a company she built on one belief: the planet heals when people
+        do.
+      </p>
+      <p style="font-size:15px;color:var(--muted);line-height:1.9;margin-bottom:32px;">
+        Raised in Peterborough, Ontario, Makayla combines rigorous psychological training with
+        Japanese philosophical traditions, sustainable living principles, and an unshakable drive
+        to build something that outlasts her. This isn't a coaching hustle. This is a life's work.
+      </p>
+      <div class="about-stats">
+        <div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Years Psych Study</div></div>
+        <div class="stat-box"><div class="stat-num">21</div><div class="stat-label">Years Old</div></div>
+        <div class="stat-box"><div class="stat-num">∞</div><div class="stat-label">Drive & Vision</div></div>
+        <div class="stat-box"><div class="stat-num">1</div><div class="stat-label">Planet to Save</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     MY JOURNEY
+════════════════════════════════════════════ -->
+<div class="journey-section">
+  <div class="journey-inner">
+    <div class="journey-intro reveal">
+      <span class="section-label">The Road So Far</span>
+      <h2 class="section-title" style="text-align:center;">Every Step Was the <span>Destination</span></h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto;">In Japanese philosophy, the path itself is sacred — not just where it leads. Here is Makayla's path.</p>
+    </div>
+    <div class="journey-grid reveal">
+      <div class="journey-card">
+        <div class="journey-num">01</div>
+        <span class="journey-status status-now">Now</span>
+        <h3>Psychology Degree</h3>
+        <p>Fourth year complete. Bachelor of Science in Psychology. The foundation of everything MindShift is built on — evidence, rigour, and the science of human change.</p>
+      </div>
+      <div class="journey-card">
+        <div class="journey-num">02</div>
+        <span class="journey-status status-now">Now</span>
+        <h3>Mindset Coaching</h3>
+        <p>Active with clients. Helping people break through the invisible walls their minds have built — one session, one shift, one life at a time.</p>
+      </div>
+      <div class="journey-card">
+        <div class="journey-num">03</div>
+        <span class="journey-status status-soon">Soon</span>
+        <h3>The Book</h3>
+        <p>First manuscript in progress. A guide to the internal revolution — psychology meets Japanese philosophy meets sustainable living. Pre-launch waitlist open now.</p>
+      </div>
+      <div class="journey-card">
+        <div class="journey-num">04</div>
+        <span class="journey-status status-soon">Soon</span>
+        <h3>The Rides That Teach</h3>
+        <p>Makayla finds her clearest thoughts on two wheels. The rhythm of cycling — constant movement, changing terrain, the requirement to stay present — is her moving meditation. Next: cross-Canada trail.</p>
+      </div>
+      <div class="journey-card">
+        <div class="journey-num">05</div>
+        <span class="journey-status status-dream">Dream</span>
+        <h3>PhD in Psychology</h3>
+        <p>The scientific community needs voices that bridge ancient wisdom and modern neuroscience. Makayla intends to be one of them. Research focus: mindset, eco-psychology, and intergenerational transformation.</p>
+      </div>
+      <div class="journey-card">
+        <div class="journey-num">06</div>
+        <span class="journey-status status-dream">Dream</span>
+        <h3>Global MindShift Empire</h3>
+        <p>A trillion-dollar wellness company built entirely on the principle that profit and planet are not opposites — they are partners. First in the world to prove it at this scale.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     BIKE RIDING QUOTE STRIP
+════════════════════════════════════════════ -->
+<div class="bike-strip reveal">
+  <div class="bike-inner">
+    <div class="bike-wheel-art">
+      <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="80" cy="80" r="72" fill="none" stroke="rgba(201,168,76,0.3)" stroke-width="6"/>
+        <circle cx="80" cy="80" r="62" fill="none" stroke="rgba(123,79,160,0.2)" stroke-width="1"/>
+        <!-- Spokes -->
+        <line x1="80" y1="8" x2="80" y2="80" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <line x1="80" y1="152" x2="80" y2="80" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <line x1="8" y1="80" x2="80" y2="80" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <line x1="152" y1="80" x2="80" y2="80" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <line x1="29" y1="29" x2="80" y2="80" stroke="rgba(201,168,76,0.3)" stroke-width="1.5"/>
+        <line x1="131" y1="29" x2="80" y2="80" stroke="rgba(201,168,76,0.3)" stroke-width="1.5"/>
+        <line x1="29" y1="131" x2="80" y2="80" stroke="rgba(201,168,76,0.3)" stroke-width="1.5"/>
+        <line x1="131" y1="131" x2="80" y2="80" stroke="rgba(201,168,76,0.3)" stroke-width="1.5"/>
+        <line x1="43" y1="14" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <line x1="117" y1="14" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <line x1="14" y1="43" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <line x1="146" y1="43" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <line x1="14" y1="117" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <line x1="146" y1="117" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <line x1="43" y1="146" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <line x1="117" y1="146" x2="80" y2="80" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+        <!-- Hub -->
+        <circle cx="80" cy="80" r="8" fill="rgba(201,168,76,0.2)" stroke="#C9A84C" stroke-width="1.5"/>
+        <circle cx="80" cy="80" r="3" fill="#C9A84C"/>
+        <!-- Tire tread marks -->
+        <circle cx="80" cy="80" r="72" fill="none" stroke="#E896C8" stroke-width="2" stroke-dasharray="8 6" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="bike-quote">
+      <blockquote>
+        "Every ride is a moving meditation.<br>
+        The road teaches what the classroom cannot —<br>
+        that <span style="color:var(--gold);">movement is clarity,</span><br>
+        and the body knows the way."
+      </blockquote>
+      <cite>— Makayla Francisco, on cycling as practice</cite>
+      <div style="margin-top:20px;font-size:13px;color:var(--muted);">
+        Next goal: Cross-Canada trail · <span style="color:var(--teal);">Every kilometre pedalled, one tree planted</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     PROGRAMS
+════════════════════════════════════════════ -->
+<section id="programs" class="reveal">
+  <div style="text-align:center;margin-bottom:60px;">
+    <span class="section-label">Coaching Programs</span>
+    <h2 class="section-title" style="text-align:center;">Choose Your <span>Transformation</span></h2>
+    <p class="section-sub" style="text-align:center;margin:0 auto;">Three paths. One destination. The version of you that was always possible.</p>
+  </div>
+  <div class="programs-grid">
+    <div class="program-card">
+      <div class="program-name">Seed</div>
+      <div class="program-jp">種 · Tane</div>
+      <div class="program-price"><sup>$</sup>99</div>
+      <div class="program-period">CAD / month · Solo track</div>
+      <ul class="program-features">
+        <li>4 live coaching calls/month</li>
+        <li>Personal mindset assessment</li>
+        <li>Weekly reflection framework</li>
+        <li>Digital workbook access</li>
+        <li>MindShift community access</li>
+      </ul>
+      <a href="mailto:makayla@mindshift.ca?subject=Seed Program — Inquiry" class="btn-outline" style="display:block;text-align:center;">Begin — Seed</a>
+    </div>
+    <div class="program-card featured">
+      <div class="program-name">Blossom</div>
+      <div class="program-jp">花 · Hana</div>
+      <div class="program-price"><sup>$</sup>299</div>
+      <div class="program-period">CAD / month · Deep track</div>
+      <ul class="program-features">
+        <li>8 live 1-on-1 sessions/month</li>
+        <li>Full KOKORO framework access</li>
+        <li>Psychology-backed protocols</li>
+        <li>Identity & values deep-work</li>
+        <li>Private WhatsApp support</li>
+        <li>Monthly book recommendations</li>
+      </ul>
+      <a href="mailto:makayla@mindshift.ca?subject=Blossom Program — Inquiry" class="btn-primary" style="display:block;text-align:center;">Begin — Blossom</a>
+    </div>
+    <div class="program-card">
+      <div class="program-name">Zenith</div>
+      <div class="program-jp">頂 · Itadaki</div>
+      <div class="program-price"><sup>$</sup>999</div>
+      <div class="program-period">CAD / month · Full immersion</div>
+      <ul class="program-features">
+        <li>Unlimited 1-on-1 sessions</li>
+        <li>Custom transformation roadmap</li>
+        <li>Eco-psychology integration</li>
+        <li>Business + life alignment work</li>
+        <li>VIP community & events</li>
+        <li>Co-author future content</li>
+        <li>PhD-track mentorship pathway</li>
+      </ul>
+      <a href="mailto:makayla@mindshift.ca?subject=Zenith Program — Inquiry" class="btn-outline" style="display:block;text-align:center;">Begin — Zenith</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     DIGITAL SHOP
+════════════════════════════════════════════ -->
+<section id="shop" style="background:var(--abyss);padding:100px 5%;max-width:100%;">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:60px;" class="reveal">
+      <span class="section-label">Digital Products</span>
+      <h2 class="section-title" style="text-align:center;">Tools for Your <span>Inner Revolution</span></h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto;">Downloadable. Biodegradable packaging when printed. Built for your transformation.</p>
+    </div>
+    <div class="shop-grid reveal">
+      <div class="shop-item">
+        <div class="shop-icon">📔</div>
+        <div class="shop-name">KOKORO Journal</div>
+        <div class="shop-desc">90-day guided journal for mindset transformation. Psychology-backed prompts. Japanese philosophy woven throughout.</div>
+        <div class="shop-price">$12</div>
+        <a href="mailto:makayla@mindshift.ca?subject=KOKORO Journal — Purchase" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Get Journal</a>
+      </div>
+      <div class="shop-item">
+        <div class="shop-icon">🧘</div>
+        <div class="shop-name">Meditation Series</div>
+        <div class="shop-desc">12 guided audio meditations. From 5-minute morning rituals to 40-minute deep states. Cherry blossom soundscapes.</div>
+        <div class="shop-price">$18</div>
+        <a href="mailto:makayla@mindshift.ca?subject=Meditation Series — Purchase" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Get Meditations</a>
+      </div>
+      <div class="shop-item">
+        <div class="shop-icon">📋</div>
+        <div class="shop-name">Identity Worksheets</div>
+        <div class="shop-desc">12 psychology-based worksheets. Values mapping, shadow work, future-self visualization. Printable, biodegradable ink.</div>
+        <div class="shop-price">$22</div>
+        <a href="mailto:makayla@mindshift.ca?subject=Identity Worksheets — Purchase" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Get Worksheets</a>
+      </div>
+      <div class="shop-item">
+        <div class="shop-icon">🌸</div>
+        <div class="shop-name">Affirmation Cards</div>
+        <div class="shop-desc">52 weekly affirmations. Bilingual: English + Japanese. Digital download. Print on seed paper — plant the cards when done.</div>
+        <div class="shop-price">$9</div>
+        <a href="mailto:makayla@mindshift.ca?subject=Affirmation Cards — Purchase" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Get Cards</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MERCHANDISE ROW -->
+<div style="background:linear-gradient(180deg,var(--abyss),#120828);border-top:1px solid var(--border);padding:80px 5%;max-width:100%;">
+  <div style="max-width:1400px;margin:0 auto;">
+    <div style="text-align:center;margin-bottom:48px;" class="reveal">
+      <span class="section-label">MindShift Merch</span>
+      <h2 class="section-title" style="text-align:center;">Wear Your <span>Transformation</span></h2>
+      <p class="section-sub" style="text-align:center;margin:0 auto;">100% organic cotton. Eco-ink printing. Biodegradable packaging. Shipped with love.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;" class="reveal">
+      <div class="shop-item">
+        <div class="shop-icon">👕</div>
+        <div class="shop-name">心の転換 Tee</div>
+        <div class="shop-desc">Organic cotton. KOKORO NO TENKAN in gold script on the back. Minimal bonsai print on chest. Sizes XS–XL.</div>
+        <div class="shop-price">$38</div>
+        <a href="https://www.paypal.me/derekfrancisco/38CAD" target="_blank" rel="noopener" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Buy Now — PayPal</a>
+      </div>
+      <div class="shop-item">
+        <div class="shop-icon">☕</div>
+        <div class="shop-name">Bonsai Mug</div>
+        <div class="shop-desc">350ml ceramic. Hand-drawn bonsai on one side, Japanese Kanji on the other. Microwave + dishwasher safe.</div>
+        <div class="shop-price">$26</div>
+        <a href="https://www.paypal.me/derekfrancisco/26CAD" target="_blank" rel="noopener" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Buy Now — PayPal</a>
+      </div>
+      <div class="shop-item">
+        <div class="shop-icon">🧢</div>
+        <div class="shop-name">MindShift Cap</div>
+        <div class="shop-desc">Minimalist embroidered cap. MindShift wordmark in gold. Adjustable. Eco-certified materials.</div>
+        <div class="shop-price">$32</div>
+        <a href="https://www.paypal.me/derekfrancisco/32CAD" target="_blank" rel="noopener" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Buy Now — PayPal</a>
+      </div>
+      <div class="shop-item">
+        <div class="shop-icon">📿</div>
+        <div class="shop-name">Sakura Bundle</div>
+        <div class="shop-desc">Tee + Mug + Affirmation Cards. The full transformation starter pack. Packaged in biodegradable gift wrap.</div>
+        <div class="shop-price">$68</div>
+        <a href="https://www.paypal.me/derekfrancisco/68CAD" target="_blank" rel="noopener" class="btn-primary" style="display:block;text-align:center;font-size:12px;">Buy Bundle — PayPal</a>
+      </div>
+    </div>
+
+    <!-- AFFILIATE / RECOMMENDED SECTION -->
+    <div style="margin-top:60px;text-align:center;" class="reveal">
+      <span class="section-label">Makayla's Favourites</span>
+      <h3 style="font-family:Georgia,serif;font-size:clamp(18px,3vw,26px);color:var(--cream);margin-bottom:8px;">Tools I Actually Use</h3>
+      <p style="font-size:14px;color:var(--muted);max-width:560px;margin:0 auto 32px;">These are the books, tools, and resources that shaped my psychology practice and eco-first philosophy. Affiliate links help fund MindShift's 1% for the Planet pledge.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:900px;margin:0 auto;">
+        <div class="shop-item" style="text-align:left;">
+          <div class="shop-icon">📚</div>
+          <div class="shop-name">Book: "Ikigai"</div>
+          <div class="shop-desc">The Japanese secret to a long and happy life. The book that changed my understanding of purpose.</div>
+          <a href="mailto:makayla@mindshift.ca?subject=Affiliate Link Request — Ikigai" class="btn-primary" style="display:block;text-align:center;font-size:11px;margin-top:12px;">Request Link</a>
+        </div>
+        <div class="shop-item" style="text-align:left;">
+          <div class="shop-icon">🧠</div>
+          <div class="shop-name">Meditation App</div>
+          <div class="shop-desc">The app I recommend to every coaching client. Evidence-based, Japanese-inspired soundscapes.</div>
+          <a href="mailto:makayla@mindshift.ca?subject=Affiliate Link Request — Meditation App" class="btn-primary" style="display:block;text-align:center;font-size:11px;margin-top:12px;">Request Link</a>
+        </div>
+        <div class="shop-item" style="text-align:left;">
+          <div class="shop-icon">🌱</div>
+          <div class="shop-name">Eco Journalling Kit</div>
+          <div class="shop-desc">Seed-paper notebooks, plant-based ink, and a bamboo pen set. Beautiful and completely biodegradable.</div>
+          <a href="mailto:makayla@mindshift.ca?subject=Affiliate Link Request — Eco Journal Kit" class="btn-primary" style="display:block;text-align:center;font-size:11px;margin-top:12px;">Request Link</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DONATION / SUPPORT -->
+    <div style="margin-top:60px;background:linear-gradient(135deg,rgba(45,27,85,0.4),rgba(22,8,48,0.6));border:1px solid var(--border);padding:40px;text-align:center;max-width:680px;margin-left:auto;margin-right:auto;" class="reveal">
+      <div style="font-size:32px;margin-bottom:16px;">🌸</div>
+      <h3 style="font-family:Georgia,serif;font-size:22px;color:var(--gold);margin-bottom:8px;">Support My Journey</h3>
+      <p style="font-size:14px;color:var(--muted);max-width:440px;margin:0 auto 24px;line-height:1.7;">Every contribution helps fund MindShift's next chapter — new content, eco-products, and the Kokoro No Tenkan book. Even $5 plants a tree through our 1% pledge.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://www.paypal.me/derekfrancisco/5CAD" target="_blank" rel="noopener" class="btn-primary" style="font-size:13px;padding:10px 20px;">$5 — Plant a Tree 🌳</a>
+        <a href="https://www.paypal.me/derekfrancisco/15CAD" target="_blank" rel="noopener" class="btn-primary" style="font-size:13px;padding:10px 20px;">$15 — Seed the Mission 🌱</a>
+        <a href="https://www.paypal.me/derekfrancisco/50CAD" target="_blank" rel="noopener" class="btn-primary" style="font-size:13px;padding:10px 20px;">$50 — Sustain the Work 🌸</a>
+        <a href="https://www.paypal.me/derekfrancisco" target="_blank" rel="noopener" style="border:1px solid var(--border);color:var(--lavender);padding:10px 20px;font-size:13px;font-weight:600;text-decoration:none;">Custom Amount →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MINDSHIFT WEEKLY NEWSLETTER -->
+<div style="background:linear-gradient(135deg,#0E0520,#160830);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 5%;max-width:100%;">
+  <div style="max-width:560px;margin:0 auto;text-align:center;" class="reveal">
+    <div style="font-size:11px;font-weight:900;letter-spacing:3px;color:var(--teal);text-transform:uppercase;margin-bottom:16px;">Weekly Wisdom</div>
+    <h2 style="font-family:Georgia,serif;font-size:clamp(22px,4vw,32px);color:var(--cream);margin-bottom:10px;">Mind Shift Weekly</h2>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:28px;line-height:1.7;">A short letter every Monday. Psychology insights, Japanese wisdom, eco-living tips, and one practice to transform your week. No noise. Just signal.</p>
+    <form id="mindshift-newsletter-form" onsubmit="mindshiftNewsletterSubmit(event)" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:12px;">
+      <input type="email" id="mindshift-newsletter-email" placeholder="your@email.com" required style="flex:1;min-width:220px;background:rgba(180,130,230,0.06);border:1px solid var(--border-v);padding:13px 16px;color:var(--cream);font-size:14px;outline:none;">
+      <button type="submit" style="background:linear-gradient(135deg,var(--amethyst),var(--gold));color:#000;border:none;padding:13px 22px;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap;">Subscribe 🌸</button>
+    </form>
+    <div id="mindshift-newsletter-success" style="display:none;color:var(--teal);font-weight:700;font-size:15px;padding:12px;background:rgba(91,188,173,0.08);border:1px solid rgba(91,188,173,0.2);margin-bottom:10px;">ありがとう — Your first letter arrives Monday. 🌸</div>
+    <p style="font-size:11px;color:var(--muted);">No spam. No hustle-culture noise. Unsubscribe any time.</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     BOOK PRE-LAUNCH
+════════════════════════════════════════════ -->
+<div class="book-section" id="book">
+  <div class="book-inner reveal">
+    <span class="section-label">Coming Book</span>
+    <div class="book-title-display">Kokoro No Tenkan</div>
+    <div class="book-subtitle">The Psychology of Permanent Transformation</div>
+    <p style="font-size:16px;color:var(--muted);max-width:560px;margin:0 auto 40px;line-height:1.9;">
+      A first book that bridges Japanese philosophy, modern psychological science,
+      and eco-conscious living — for anyone who is ready to stop managing their life
+      and start transforming it.
     </p>
-    <div class="hero-proof">
-      <div class="proof-chip"><span class="dot">◆</span> Neuroscience-Backed</div>
-      <div class="proof-chip"><span class="dot">◆</span> 10,000+ Transformations</div>
-      <div class="proof-chip"><span class="dot">◆</span> 8-Week Rewiring Protocol</div>
-      <div class="proof-chip"><span class="dot">◆</span> Results Guaranteed</div>
+    <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+      <input type="email" class="waitlist-input" placeholder="your@email.com" required id="waitlist-email">
+      <button type="submit" class="btn-primary">Join Waitlist</button>
+    </form>
+    <p id="waitlist-msg" style="margin-top:16px;font-size:13px;color:var(--teal);display:none;">You're on the list. ありがとう。</p>
+    <p style="margin-top:16px;font-size:12px;color:var(--muted);">Pre-launch waitlist. No spam. Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     DAD'S MESSAGE
+════════════════════════════════════════════ -->
+<div class="dad-section">
+  <div class="dad-inner reveal">
+    <span class="dad-label">💛 A Message From Dad</span>
+    <p class="dad-message">
+      "Makayla — you have been <span class="highlight">extraordinary</span> since the day you arrived.
+      Watching you finish four years of psychology at 21 years old, build your own brand,
+      live by your values, and fight for a <span class="sakura">planet worth inheriting</span> —
+      I am more proud of you than any words in any language can say.
+      <br><br>
+      This site is yours. This empire is yours to build, on your own terms.
+      I built mine so you never had to start from scratch.
+      <span class="highlight">You were always the best thing I ever built.</span>
+      <br><br>
+      The world shifts one mind at a time. You have already shifted mine.
+      <span class="sakura">心の転換 — always.</span>"
+    </p>
+    <div class="dad-sig">
+      <div class="dad-sig-line"></div>
+      <div class="dad-sig-name">— Derek Francisco, Dad &amp; Founder, Francisco Holdings Inc.</div>
+      <div class="dad-sig-line"></div>
     </div>
-    <div class="hero-btns">
-      <a href="#programs" class="btn-primary">Choose Your Program →</a>
-      <a href="#science" class="btn-secondary">The Science</a>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section style="padding:100px 5%;max-width:1400px;margin:0 auto;">
+  <div style="text-align:center;margin-bottom:48px;" class="reveal">
+    <span class="section-label">Kind Words</span>
+    <h2 class="section-title" style="text-align:center;">What People <span>Experience</span></h2>
+    <span class="sample-badge">Sample testimonial format — real reviews coming as clients grow</span>
+  </div>
+  <div class="testi-grid reveal">
+    <div class="testi-card">
+      <p class="testi-text">"In 3 months of working with Makayla I dismantled a belief I had carried for 15 years. I didn't know that was even possible. She doesn't just coach — she excavates."</p>
+      <div class="testi-name">A.K., Peterborough</div>
+      <div class="testi-role">Entrepreneur · Blossom Program</div>
     </div>
-    <div class="hero-stats">
-      <div class="hs-item"><div class="hs-num">10K+</div><div class="hs-label">Minds Bloomed</div></div>
-      <div class="hs-item"><div class="hs-num">94%</div><div class="hs-label">Lasting Change</div></div>
-      <div class="hs-item"><div class="hs-num">8 Wks</div><div class="hs-label">To Peak State</div></div>
-      <div class="hs-item"><div class="hs-num">12 Yrs</div><div class="hs-label">Research-Backed</div></div>
+    <div class="testi-card">
+      <p class="testi-text">"The KOKORO Journal changed my mornings completely. I went from anxious and reactive to centred and intentional — in 90 days. The Japanese prompts especially hit different."</p>
+      <div class="testi-name">R.T., Toronto</div>
+      <div class="testi-role">Grad Student · Digital Shop</div>
+    </div>
+    <div class="testi-card">
+      <p class="testi-text">"I expected coaching. What I got was an excavation of who I was pretending to be and a blueprint for who I actually am. Makayla is the real deal. At 21. Imagine when she's 40."</p>
+      <div class="testi-name">M.J., Vancouver</div>
+      <div class="testi-role">Tech Founder · Zenith Program</div>
     </div>
   </div>
 </section>
 
-<div class="blossom-divider">🌸 &nbsp; 🌺 &nbsp; 🌸</div>
+<!-- ════════════════════════════════════════════
+     COMMUNITY — JEFFY
+════════════════════════════════════════════ -->
+<section class="community-section reveal">
+  <span class="section-label" style="text-align:center;display:block;">Friends of the Show</span>
+  <h2 class="section-title" style="text-align:center;margin-bottom:40px;">The Inner Circle</h2>
+  <div class="jeffy-box">
+    <div class="jeffy-crown">🌟</div>
+    <div class="jeffy-name">Jeffy</div>
+    <div class="jeffy-title">Honorary MindShift Ambassador · Day One</div>
+    <p class="jeffy-msg">
+      Some people show up before the brand has a name, before the book is written,
+      before the world pays attention. Jeffy was there. That kind of loyalty doesn't
+      get a footnote — it gets a permanent place in the story.
+      <br><br>
+      <span style="color:var(--gold);font-style:italic;">ありがとう, Jeffy. You are part of this.</span>
+    </p>
+  </div>
+</section>
 
-<!-- ── ABOUT ── -->
-<section class="section about-section" id="about">
-  <div class="section-inner">
-    <div class="about-grid">
-      <div class="about-visual fade-up">
-        <div class="about-monogram">M</div>
-        <div class="about-name">Makayla Francisco</div>
-        <div class="about-title">Founder · MindShift</div>
-        <div class="about-badges">
-          <span class="about-badge">Personal Growth</span>
-          <span class="about-badge">Neuro-Coaching</span>
-          <span class="about-badge">Mindset Architect</span>
-        </div>
+<!-- ════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact" style="padding:100px 5%;max-width:1400px;margin:0 auto;">
+  <div class="contact-grid reveal">
+    <div class="contact-info">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Let's Begin Your <span>Shift</span></h2>
+      <p style="font-size:15px;color:var(--muted);line-height:1.9;margin-bottom:32px;">
+        Whether you're curious about coaching, the book, wholesale digital product licensing,
+        or just want to say hello — Makayla reads every message.
+      </p>
+      <div class="contact-detail">
+        <div class="contact-icon">📧</div>
+        <div class="contact-text">makayla@mindshift.ca</div>
       </div>
-      <div class="about-text fade-up">
-        <div class="section-eyebrow">Your Coach</div>
-        <h2 class="section-title">Makayla Francisco is a Neuroplasticity Coach &amp; Mindset Architect</h2>
-        <p>MindShift was born from a belief that <strong>every person carries the seed of their most extraordinary self</strong> — and that the brain, with the right tools, will grow toward it.</p>
-        <p>Rooted in peer-reviewed neuroscience and years of transformational coaching, Makayla's method doesn't just inspire — it <strong>rewires</strong>. We work at the architectural level of your mind to build patterns that last.</p>
-        <ul class="pillar-list">
-          <li><span class="pillar-icon">🌸</span> Neuroplasticity-based habit architecture</li>
-          <li><span class="pillar-icon">🧠</span> Pattern interrupt &amp; belief restructuring</li>
-          <li><span class="pillar-icon">💫</span> Identity-level transformation protocols</li>
-          <li><span class="pillar-icon">🌊</span> Nervous system regulation &amp; HRV optimization</li>
-          <li><span class="pillar-icon">✨</span> Flow state training &amp; peak performance</li>
-        </ul>
-        <a href="#programs" class="btn-primary" style="display:inline-block;margin-top:8px;">Begin Your Journey →</a>
+      <div class="contact-detail">
+        <div class="contact-icon">📞</div>
+        <div class="contact-text">+1 (705) 555-0199</div>
       </div>
+      <div class="contact-detail">
+        <div class="contact-icon">📍</div>
+        <div class="contact-text">Peterborough, Ontario · Virtual Worldwide</div>
+      </div>
+      <div class="social-bar">
+        <a href="https://paypal.me/derekfrancisco" target="_blank" rel="noopener" class="social-link">💸 PayPal</a>
+        <a href="https://facebook.com/makayla.francisco" target="_blank" rel="noopener" class="social-link">📘 Facebook</a>
+        <a href="https://linkedin.com/in/makayla-francisco" target="_blank" rel="noopener" class="social-link">💼 LinkedIn</a>
+        <a href="https://x.com/MakaylaShift" target="_blank" rel="noopener" class="social-link">𝕏 Twitter/X</a>
+      </div>
+    </div>
+    <div>
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <input type="text" class="form-input" placeholder="Your Name" required>
+        <input type="email" class="form-input" placeholder="Your Email" required>
+        <input type="text" class="form-input" placeholder="Subject">
+        <textarea class="form-textarea" placeholder="Your message — what's your shift?" required></textarea>
+        <button type="submit" class="btn-primary">Send Message →</button>
+        <p id="contact-msg" style="font-size:13px;color:var(--teal);display:none;margin-top:8px;">Message sent. Makayla will be in touch. 🌸</p>
+      </form>
     </div>
   </div>
 </section>
 
-<div class="blossom-divider">🌸 &nbsp; 🌺 &nbsp; 🌸</div>
-
-<!-- ── PROGRAMS ── -->
-<section class="section programs-section" id="programs">
-  <div class="section-inner">
-    <div class="centered fade-up">
-      <div class="section-eyebrow">Programs</div>
-      <h2 class="section-title">Choose Your Transformation</h2>
-      <p class="section-sub">One investment. Lifelong change. Every program comes with Makayla's results guarantee — we continue until you bloom.</p>
-    </div>
-
-    <div class="pricing-grid">
-
-      <!-- NEURO -->
-      <div class="price-card fade-up">
-        <div class="card-tier">Program 01</div>
-        <div class="card-name">Neuro</div>
-        <div class="card-for">Self-Guided Neural Rewiring</div>
-        <div class="card-price">
-          <span class="card-currency">$</span>
-          <span class="card-amount">497</span>
-          <span class="card-cadence">&nbsp;CAD</span>
-        </div>
-        <hr class="card-divider">
-        <ul class="card-features">
-          <li><span class="chk">◆</span> 8-week neuroplasticity program</li>
-          <li><span class="chk">◆</span> Daily rewiring audio sessions (20 min)</li>
-          <li><span class="chk">◆</span> Brain-pattern assessment &amp; baseline</li>
-          <li><span class="chk">◆</span> Habit architecture workbook</li>
-          <li><span class="chk">◆</span> Sleep optimization protocol</li>
-          <li><span class="chk">◆</span> MindShift community access</li>
-          <li><span class="chk">◆</span> 90-day program access</li>
-          <li><span class="chk">◆</span> fNIA-informed protocols</li>
-        </ul>
-        <a href="mailto:hello@mindshiftbymakayla.com?subject=MindShift Neuro Program — Enrollment&body=Hi Makayla Francisco,%0A%0AI'd like to enroll in the Neuro Program ($497 CAD).%0A%0AName: %0AEmail: %0AWhat I'm hoping to transform: %0A%0ALooking forward to beginning." class="card-btn card-btn-outline">Enroll Now — $497 →</a>
-      </div>
-
-      <!-- GROUP INTENSIVE (FEATURED) -->
-      <div class="price-card featured fade-up">
-        <div class="card-badge">MOST POPULAR</div>
-        <div class="card-tier">Program 02</div>
-        <div class="card-name">Group Intensive</div>
-        <div class="card-for">Cohort-Based Intensive</div>
-        <div class="card-price">
-          <span class="card-currency">$</span>
-          <span class="card-amount">1,997</span>
-          <span class="card-cadence">&nbsp;CAD</span>
-        </div>
-        <hr class="card-divider">
-        <ul class="card-features">
-          <li><span class="chk">◆</span> Everything in Neuro</li>
-          <li><span class="chk">◆</span> 12-week live cohort (20 seats max)</li>
-          <li><span class="chk">◆</span> Weekly 90-min group coaching calls</li>
-          <li><span class="chk">◆</span> Accountability partner matching</li>
-          <li><span class="chk">◆</span> Identity reconstruction module</li>
-          <li><span class="chk">◆</span> Trauma-informed protocols</li>
-          <li><span class="chk">◆</span> Advanced biohacking toolkit</li>
-          <li><span class="chk">◆</span> Stress inoculation training</li>
-          <li><span class="chk">◆</span> Alumni network (lifetime)</li>
-          <li><span class="chk">◆</span> All recordings forever</li>
-        </ul>
-        <a href="mailto:hello@mindshiftbymakayla.com?subject=MindShift Group Intensive — Enrollment&body=Hi Makayla Francisco,%0A%0AI'd like to join the Group Intensive ($1,997 CAD).%0A%0AName: %0AEmail: %0APhone: %0AWhat I'm hoping to transform: %0A%0AExcited to bloom." class="card-btn card-btn-primary">Enroll Now — $1,997 →</a>
-      </div>
-
-      <!-- PREMIUM 1:1 -->
-      <div class="price-card premium fade-up">
-        <div class="card-badge gold">1:1 ELITE</div>
-        <div class="card-tier">Program 03</div>
-        <div class="card-name">Premium</div>
-        <div class="card-for">Private Coaching with Makayla Francisco</div>
-        <div class="card-price">
-          <span class="card-currency" style="color:var(--gold)">$</span>
-          <span class="card-amount">10,000</span>
-          <span class="card-cadence">&nbsp;CAD</span>
-        </div>
-        <hr class="card-divider">
-        <ul class="card-features">
-          <li><span class="chk">◆</span> Everything in Group Intensive</li>
-          <li><span class="chk">◆</span> 6 months private 1-on-1 coaching</li>
-          <li><span class="chk">◆</span> Bi-weekly 60-min private sessions</li>
-          <li><span class="chk">◆</span> Custom neural reprogramming protocol</li>
-          <li><span class="chk">◆</span> Flow State Training (intensive)</li>
-          <li><span class="chk">◆</span> Monthly neurological progress mapping</li>
-          <li><span class="chk">◆</span> Emergency 48-hr direct access</li>
-          <li><span class="chk">◆</span> Post-program 3-month check-ins</li>
-          <li><span class="chk">◆</span> Results guarantee: we continue until done</li>
-        </ul>
-        <a href="mailto:hello@mindshiftbymakayla.com?subject=MindShift Premium 1:1 — Application&body=Hi Makayla Francisco,%0A%0AI'd like to apply for the Premium 1:1 Program ($10,000 CAD).%0A%0AName: %0AEmail: %0APhone: %0AWhat I'm working to transform: %0ACurrent challenges: %0AWhy now: %0A%0ALooking forward to connecting." class="card-btn card-btn-gold">Apply Now — $10,000 →</a>
-      </div>
-
-    </div>
-    <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:24px;">All programs are in CAD. Payment plans available — email to ask. Results guarantee: if you do the work and don't see transformation, Makayla Francisco continues at no charge.</p>
-  </div>
-</section>
-
-<div class="blossom-divider">🌸 &nbsp; 🌺 &nbsp; 🌸</div>
-
-<!-- ── SCIENCE ── -->
-<section class="section science-section" id="science">
-  <div class="section-inner">
-    <div class="centered fade-up">
-      <div class="section-eyebrow">The Science</div>
-      <h2 class="section-title">Grounded in Neuroscience</h2>
-      <p class="section-sub">Not motivation. Not mindset hacks. Measurable, peer-reviewed brain change — the kind that lasts.</p>
-    </div>
-    <div class="sci-grid">
-      <div class="sci-card fade-up">
-        <div class="sci-icon">🔬</div>
-        <div class="sci-title">Neuroplasticity</div>
-        <div class="sci-text">Your brain physically rewires with every intentional new pattern we build together. This is not metaphor — it is measurable structural change.</div>
-      </div>
-      <div class="sci-card fade-up">
-        <div class="sci-icon">⚡</div>
-        <div class="sci-title">Pattern Interrupts</div>
-        <div class="sci-text">Unconscious loops keep most people stuck. We identify, map, and break the exact neural circuits creating your ceiling.</div>
-      </div>
-      <div class="sci-card fade-up">
-        <div class="sci-icon">🌊</div>
-        <div class="sci-title">HRV Optimization</div>
-        <div class="sci-text">Heart Rate Variability training synchronizes your nervous system for peak decision-making, emotional regulation, and resilience.</div>
-      </div>
-      <div class="sci-card fade-up">
-        <div class="sci-icon">😴</div>
-        <div class="sci-title">Sleep Architecture</div>
-        <div class="sci-text">Deep sleep is where consolidation happens. We optimize your cycles to accelerate learning, healing, and neural growth.</div>
-      </div>
-      <div class="sci-card fade-up">
-        <div class="sci-icon">🧭</div>
-        <div class="sci-title">fNIA Brain Mapping</div>
-        <div class="sci-text">Functional near-infrared assessment protocols reveal your unique neural patterns — so rewiring is precise, not generic.</div>
-      </div>
-      <div class="sci-card fade-up">
-        <div class="sci-icon">🌸</div>
-        <div class="sci-title">Identity-Level Change</div>
-        <div class="sci-text">Surface habits change temporarily. Identity-level rewiring changes who you are at the root — so the new patterns hold permanently.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="blossom-divider">🌸 &nbsp; 🌺 &nbsp; 🌸</div>
-
-<!-- ── TESTIMONIALS ── -->
-<section class="section testi-section">
-  <div class="section-inner">
-    <div class="centered fade-up">
-      <div class="section-eyebrow">Transformations</div>
-      <h2 class="section-title">They Bloomed. You Can Too.</h2>
-    </div>
-    <div class="testi-grid">
-      <div class="testi-card fade-up">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"I went from 4 hours of scattered, anxious work to 9 hours of deep, peaceful flow. Makayla Francisco didn't motivate me — she changed how my brain actually works."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">R</div>
-          <div><div class="testi-name">R.T., Founder &amp; CEO</div><div class="testi-role">Tech Scale-Up, Toronto</div></div>
-        </div>
-      </div>
-      <div class="testi-card fade-up">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"The Premium program was the best investment I've ever made in myself. The work is deep, real, and lasting. Six months later I'm calmer, sharper, and more myself than ever."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">J</div>
-          <div><div class="testi-name">J.M., Entrepreneur</div><div class="testi-role">Real Estate, Vancouver</div></div>
-        </div>
-      </div>
-      <div class="testi-card fade-up">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"After years of traditional therapy and coaching, this was the first approach that actually changed my patterns — not just helped me understand them. I feel like I finally bloomed."</p>
-        <div class="testi-author">
-          <div class="testi-avatar">S</div>
-          <div><div class="testi-name">S.K., Executive Coach</div><div class="testi-role">Leadership Development, Calgary</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="blossom-divider">🌸 &nbsp; 🌺 &nbsp; 🌸</div>
-
-<!-- ── CTA BAND ── -->
-<section class="section cta-section">
-  <div class="section-inner">
-    <div class="cta-inner fade-up">
-      <span class="cta-blossom">🌸</span>
-      <div class="section-eyebrow">Your Time is Now</div>
-      <h2 class="section-title">Your Biology Is Not<br>Your Destiny</h2>
-      <p class="section-sub">Every pattern you carry was learned. And what was learned can be unlearned. The version of you that's been waiting — she's ready.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:32px;">
-        <a href="#programs" class="btn-primary">Choose Your Program →</a>
-        <a href="#contact" class="btn-secondary">Ask Makayla Francisco a Question</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── CONTACT ── -->
-<section class="section contact-section" id="contact">
-  <div class="section-inner">
-    <div class="contact-grid">
-      <div class="fade-up">
-        <div class="section-eyebrow">Connect</div>
-        <h2 class="section-title">Let's Talk About<br>Your Transformation</h2>
-        <p class="section-sub" style="margin-bottom:36px;">Have questions about which program is right for you? Makayla Francisco personally responds to every inquiry.</p>
-        <div class="contact-item">
-          <span class="contact-icon">✉️</span>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:hello@mindshiftbymakayla.com">hello@mindshiftbymakayla.com</a></div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">🌸</span>
-          <div>
-            <div class="contact-label">Response Time</div>
-            <div class="contact-value">Within 24 hours, personally from Makayla Francisco</div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <span class="contact-icon">🇨🇦</span>
-          <div>
-            <div class="contact-label">Location</div>
-            <div class="contact-value">Ontario, Canada — serving clients worldwide</div>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form fade-up">
-        <div id="contact-form-wrap">
-          <div class="form-row">
-            <div>
-              <label class="form-label">First Name *</label>
-              <input id="cf-first" type="text" required placeholder="Your name" class="form-input">
-            </div>
-            <div>
-              <label class="form-label">Email *</label>
-              <input id="cf-email" type="email" required placeholder="you@email.com" class="form-input">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Interested In</label>
-            <select id="cf-program" class="form-select">
-              <option value="">Select a program</option>
-              <option>Neuro — $497</option>
-              <option>Group Intensive — $1,997</option>
-              <option>Premium 1:1 — $10,000</option>
-              <option>Just exploring</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">What do you want to transform? *</label>
-            <textarea id="cf-message" rows="4" required placeholder="Tell Makayla Francisco what you're working through and what you'd love to change..." class="form-input" style="resize:vertical;"></textarea>
-          </div>
-          <button onclick="submitContact()" class="form-submit">Send to Makayla Francisco 🌸</button>
-          <p style="font-size:11px;color:var(--muted);text-align:center;margin-top:10px;">Your message opens a pre-filled email to Makayla Francisco. No spam — ever.</p>
-        </div>
-        <div class="form-success" id="contact-success">
-          <div class="success-icon">🌸</div>
-          <h3>Message Sent</h3>
-          <p>Your email client should have opened with your message pre-filled.<br>Makayla Francisco responds within 24 hours — personally.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FOOTER ── -->
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <span class="wordmark"><em>Mind</em>Shift by Makayla Francisco</span>
-      <p>Neuroplasticity-based personal growth coaching. Bloom into who you are. Every session, every protocol, every result — rooted in science and delivered with heart.</p>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>MINDSHIFT</h3>
+        <p>心の転換 — The transformation of heart and mind. Psychology · Sustainability · Sovereignty. Built by Makayla Francisco, age 21, Peterborough, Ontario.</p>
+        <div style="margin-top:16px;font-size:12px;color:var(--border);line-height:1.8;">
+          ⚠️ Makayla Francisco is a psychology graduate and trained mindset coach — not a licensed therapist or clinical psychologist. Coaching is not therapy or medical advice. For clinical mental health support, please contact a registered professional.
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Coaching</h4>
+        <a href="#programs">Seed Program</a>
+        <a href="#programs">Blossom Program</a>
+        <a href="#programs">Zenith Program</a>
+        <a href="#book">The Book</a>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="#shop">KOKORO Journal</a>
+        <a href="#shop">Meditation Series</a>
+        <a href="#shop">Worksheets</a>
+        <a href="#shop">Affirmation Cards</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="#contact">Contact</a>
+        <a href="https://instagram.com/makaylashift" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://linkedin.com/in/makayla-francisco" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://facebook.com/makayla.francisco" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://franciscoderek7.github.io/mindshift-makayla">GitHub Site</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Programs</h4>
-      <a href="#programs">Neuro — $497</a>
-      <a href="#programs">Group Intensive — $1,997</a>
-      <a href="#programs">Premium 1:1 — $10,000</a>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 MindShift by Makayla Francisco · Peterborough, Ontario · franciscoderek7.github.io/mindshift-makayla</div>
+      <div class="footer-kanji">心の転換 · 桜 · 自然</div>
     </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <a href="#about">About Makayla Francisco</a>
-      <a href="#science">The Science</a>
-      <a href="#contact">Contact</a>
-      <a href="mailto:hello@mindshiftbymakayla.com">hello@mindshiftbymakayla.com</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2026 MindShift by Makayla Francisco &nbsp;·&nbsp; All rights reserved</span>
-    <span class="footer-blossom">🌸</span>
-    <span>Results are individual. Programs include good-faith results guarantee.</span>
   </div>
 </footer>
 
-<!-- ── SOCIAL PROOF TOAST ── -->
-<div id="social-toast">
-  <div class="toast-inner">
-    <div class="toast-avatar">🌸</div>
-    <div>
-      <div class="toast-name" id="toast-name"></div>
-      <div class="toast-action" id="toast-action"></div>
-    </div>
-  </div>
-</div>
-
-<!-- ── EMAIL CAPTURE MODAL ── -->
-<div id="email-modal" onclick="if(event.target===this)closeModal();">
-  <div class="email-modal-box">
-    <button class="modal-close-btn" onclick="closeModal()">✕</button>
-    <div class="modal-blossom">🌸</div>
-    <div class="modal-tag">Free Gift</div>
-    <h3 class="modal-title">The 7-Day Neural<br>Bloom Protocol</h3>
-    <p class="modal-sub">The exact daily practice Makayla's clients use to break stuck patterns in 7 days. Peer-reviewed. Free PDF.</p>
-    <input type="email" id="modal-email" placeholder="your@email.com" class="modal-input" onkeydown="if(event.key==='Enter')submitModal()">
-    <button onclick="submitModal()" class="modal-submit">Send Me the Protocol 🌸</button>
-    <p class="modal-legal">🔒 Zero spam. Unsubscribe anytime. Your information is sacred.</p>
-  </div>
-</div>
-
-<!-- ── CHERRY BLOSSOM ANIMATION ── -->
+<!-- ════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════ -->
 <script>
+/* ── CHERRY BLOSSOM CANVAS ── */
 (function() {
-  var canvas = document.getElementById('blossom-canvas');
-  var ctx = canvas.getContext('2d');
-  var W, H, petals = [];
-
-  var COLORS = [
-    'rgba(232,137,154,0.75)',
-    'rgba(245,198,208,0.80)',
-    'rgba(212,96,122,0.65)',
-    'rgba(253,232,237,0.90)',
-    'rgba(255,255,255,0.70)',
-    'rgba(201,165,101,0.50)',
-    'rgba(248,180,200,0.70)',
-  ];
+  const canvas = document.getElementById('blossom-canvas');
+  const ctx = canvas.getContext('2d');
+  const COLORS = ['#E896C8','#F4C8E0','#FBDCE5','#D4BFEE','#B08FD0','#C9A84C'];
+  const COUNT = 70;
+  let W, H, petals = [];
 
   function resize() {
-    W = canvas.width  = window.innerWidth;
+    W = canvas.width = window.innerWidth;
     H = canvas.height = window.innerHeight;
   }
-  window.addEventListener('resize', resize);
-  resize();
 
   function Petal() {
-    this.reset(true);
+    this.reset();
   }
-
-  Petal.prototype.reset = function(initial) {
-    this.x    = Math.random() * W;
-    this.y    = initial ? (Math.random() * H) : -20;
-    this.size = 4 + Math.random() * 9;
-    this.speedY = 0.5 + Math.random() * 1.2;
-    this.speedX = (Math.random() - 0.5) * 0.8;
-    this.angle  = Math.random() * Math.PI * 2;
-    this.spin   = (Math.random() - 0.5) * 0.04;
-    this.sway   = Math.random() * Math.PI * 2;
-    this.swaySpeed = 0.01 + Math.random() * 0.015;
-    this.swayAmp   = 0.4 + Math.random() * 0.9;
-    this.color  = COLORS[Math.floor(Math.random() * COLORS.length)];
-    this.opacity = 0.5 + Math.random() * 0.5;
+  Petal.prototype.reset = function() {
+    this.x = Math.random() * W;
+    this.y = -20 - Math.random() * 200;
+    this.s = 6 + Math.random() * 10;
+    this.r = Math.random() * Math.PI * 2;
+    this.rSpeed = (Math.random() - 0.5) * 0.04;
+    this.vx = (Math.random() - 0.5) * 0.8;
+    this.vy = 0.6 + Math.random() * 1.4;
+    this.sway = Math.random() * Math.PI * 2;
+    this.swaySpeed = 0.012 + Math.random() * 0.016;
+    this.swayAmp = 0.6 + Math.random() * 1.2;
+    this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
+    this.opacity = 0.4 + Math.random() * 0.55;
   };
-
   Petal.prototype.update = function() {
     this.sway += this.swaySpeed;
-    this.x    += Math.sin(this.sway) * this.swayAmp + this.speedX;
-    this.y    += this.speedY;
-    this.angle += this.spin;
-    if (this.y > H + 30) this.reset(false);
+    this.x += this.vx + Math.sin(this.sway) * this.swayAmp;
+    this.y += this.vy;
+    this.r += this.rSpeed;
+    if (this.y > H + 30) this.reset();
+  };
+  Petal.prototype.draw = function() {
+    ctx.save();
+    ctx.globalAlpha = this.opacity;
+    ctx.translate(this.x, this.y);
+    ctx.rotate(this.r);
+    ctx.fillStyle = this.color;
+    const s = this.s;
+    for (let i = 0; i < 5; i++) {
+      ctx.save();
+      ctx.rotate((i * Math.PI * 2) / 5);
+      ctx.beginPath();
+      ctx.ellipse(0, -s * 0.58, s * 0.36, s * 0.62, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+    /* gold stamen center */
+    ctx.fillStyle = 'rgba(201,168,76,0.8)';
+    ctx.beginPath();
+    ctx.arc(0, 0, s * 0.18, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
   };
 
-  function drawPetal(ctx, x, y, size, angle, color) {
-    ctx.save();
-    ctx.translate(x, y);
-    ctx.rotate(angle);
-    ctx.globalAlpha = 0.82;
-    ctx.beginPath();
-    ctx.moveTo(0, -size);
-    ctx.bezierCurveTo(size * 0.6, -size * 0.6, size * 0.8, size * 0.1, 0, size * 0.6);
-    ctx.bezierCurveTo(-size * 0.8, size * 0.1, -size * 0.6, -size * 0.6, 0, -size);
-    ctx.fillStyle = color;
-    ctx.fill();
-    ctx.globalAlpha = 0.25;
-    ctx.strokeStyle = 'rgba(200,82,106,0.3)';
-    ctx.lineWidth = 0.5;
-    ctx.stroke();
-    ctx.globalAlpha = 1;
-    ctx.restore();
+  for (let i = 0; i < COUNT; i++) {
+    const p = new Petal();
+    p.y = Math.random() * H; /* start spread across screen */
+    petals.push(p);
   }
 
-  var COUNT = Math.min(60, Math.floor(W / 20));
-  for (var i = 0; i < COUNT; i++) petals.push(new Petal());
-
-  function animate() {
+  function loop() {
     ctx.clearRect(0, 0, W, H);
-    for (var i = 0; i < petals.length; i++) {
-      petals[i].update();
-      drawPetal(ctx, petals[i].x, petals[i].y, petals[i].size, petals[i].angle, petals[i].color);
-    }
-    requestAnimationFrame(animate);
+    petals.forEach(p => { p.update(); p.draw(); });
+    requestAnimationFrame(loop);
   }
-  animate();
+
+  window.addEventListener('resize', resize);
+  resize();
+  loop();
 })();
-</script>
 
-<!-- ── SCROLL ANIMATIONS ── -->
-<script>
-var io = new IntersectionObserver(function(entries) {
-  entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.fade-up').forEach(function(el) { io.observe(el); });
-</script>
-
-<!-- ── SOCIAL PROOF TOASTS ── -->
-<script>
-var toasts = [
-  { name: 'A.R., Entrepreneur — Toronto', action: 'just enrolled in Group Intensive 🌸' },
-  { name: 'First-time client, Vancouver', action: 'just started the Neuro Program' },
-  { name: 'J.P., Executive — Ottawa', action: 'just applied for Premium 1:1' },
-  { name: 'S.M., Coach — Calgary', action: 'just completed Week 4 of Neuro' },
-  { name: 'New enrollment, Ontario', action: 'just joined the Group Intensive cohort' },
-  { name: 'M.W., Founder — BC', action: 'just began her transformation journey 🌸' },
-];
-var ti = Math.floor(Math.random() * toasts.length);
-var toast = document.getElementById('social-toast');
-function showToast() {
-  var t = toasts[ti % toasts.length]; ti++;
-  document.getElementById('toast-name').textContent = t.name;
-  document.getElementById('toast-action').textContent = t.action;
-  toast.style.display = 'block'; toast.style.animation = 'toast-in .35s ease';
-  setTimeout(function() {
-    toast.style.animation = 'toast-out .35s ease forwards';
-    setTimeout(function() { toast.style.display = 'none'; toast.style.animation = ''; }, 380);
-  }, 5500);
-}
-setTimeout(function() { showToast(); setInterval(showToast, 42000); }, 14000);
-</script>
-
-<!-- ── EMAIL MODAL ── -->
-<script>
+/* ── SCROLL REVEAL ── */
 (function() {
-  var key = 'ms_modal_mk';
-  if (localStorage.getItem(key)) return;
-  var shown = false;
-  function show() {
-    if (shown) return; shown = true;
-    document.getElementById('email-modal').style.display = 'flex';
-  }
-  setTimeout(show, 28000);
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > document.body.scrollHeight * 0.55) show();
-  }, { passive: true, once: true });
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 })();
-function closeModal() {
-  document.getElementById('email-modal').style.display = 'none';
-  localStorage.setItem('ms_modal_mk', '1');
+
+/* ── WAITLIST FORM ── */
+function handleWaitlist(e) {
+  e.preventDefault();
+  const email = document.getElementById('waitlist-email').value;
+  window.location.href = 'mailto:makayla@mindshift.ca?subject=Book Waitlist&body=Please add me to the Kokoro No Tenkan book waitlist. My email: ' + email;
+  document.getElementById('waitlist-msg').style.display = 'block';
 }
-function submitModal() {
-  var email = document.getElementById('modal-email').value.trim();
-  if (!email || !email.includes('@')) { document.getElementById('modal-email').style.borderColor = '#C8526A'; return; }
-  var leads = JSON.parse(localStorage.getItem('ms_leads') || '[]');
-  leads.push({ email: email, ts: Date.now(), source: 'modal' });
-  localStorage.setItem('ms_leads', JSON.stringify(leads));
-  closeModal();
+
+/* ── NEWSLETTER ── */
+function mindshiftNewsletterSubmit(e) {
+  e.preventDefault();
+  var email = document.getElementById('mindshift-newsletter-email').value;
+  document.getElementById('mindshift-newsletter-form').style.display = 'none';
+  document.getElementById('mindshift-newsletter-success').style.display = 'block';
+  try { window.open('mailto:makayla@mindshift.ca?subject=Mind+Shift+Weekly+Subscription&body=Please+add+me+to+Mind+Shift+Weekly.+My+email:+'+encodeURIComponent(email), '_blank'); } catch(err){}
 }
-function submitContact() {
-  var first   = document.getElementById('cf-first').value;
-  var email   = document.getElementById('cf-email').value;
-  var program = document.getElementById('cf-program').value || 'Not specified';
-  var message = document.getElementById('cf-message').value;
-  if (!first || !email || !message) return;
-  var subject = encodeURIComponent('MindShift Inquiry — ' + (program || 'General') + ' — ' + first);
-  var body = encodeURIComponent(
-    'MINDSHIFT INQUIRY\n=================\n' +
-    'Name:    ' + first + '\n' +
-    'Email:   ' + email + '\n' +
-    'Program: ' + program + '\n\n' +
-    'Message:\n' + message + '\n\n---\nSent from mindshiftbymakayla.com'
-  );
-  window.location.href = 'mailto:hello@mindshiftbymakayla.com?subject=' + subject + '&body=' + body;
-  document.getElementById('contact-form-wrap').style.display = 'none';
-  document.getElementById('contact-success').style.display = 'block';
+
+/* ── CONTACT FORM ── */
+function handleContact(e) {
+  e.preventDefault();
+  const f = e.target;
+  const name = f[0].value, email = f[1].value, subj = f[2].value || 'MindShift Inquiry', msg = f[3].value;
+  window.location.href = 'mailto:makayla@mindshift.ca?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent('From: ' + name + '\nEmail: ' + email + '\n\n' + msg);
+  document.getElementById('contact-msg').style.display = 'block';
+  f.reset();
 }
 </script>
-
 </body>
 </html>
