@@ -1570,5 +1570,18 @@ function handleContact(e) {
   f.reset();
 }
 </script>
+<script src="https://cdn.jsdelivr.net/gh/franciscoderek7/primedoxai-deploy@main/agents/referral-engine.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/franciscoderek7/primedoxai-deploy@main/agents/payment-provider.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/franciscoderek7/primedoxai-deploy@main/agents/apex-agent.js"></script>
+<script>
+window.Apex && window.Apex.initStickyBuyBar({
+  text: 'Begin the Seed Program',
+  href: 'mailto:makayla@mindshift.ca?subject=Seed Program — Inquiry',
+  ctaText: 'Get Started →',
+  target: '_self',
+  accent: '#D4AF37'
+});
+window.Apex && window.Apex.initExitIntent({ magnet: 'MindShift Seed Program Overview', formspreeId: 'YOUR_FORM_ID' });
+</script>
 </body>
 </html>
